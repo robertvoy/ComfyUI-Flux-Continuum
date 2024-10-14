@@ -1,3 +1,3 @@
 # ComfyUI Flux Continuum
 
-![image](https://github.com/user-attachments/assets/a795151c-3a79-422a-a612-f617fda972e0)
+![image](https://github.com/user-attachments/assets/cb2919c1-edc8-45ab-a372-46066a3dc901)
