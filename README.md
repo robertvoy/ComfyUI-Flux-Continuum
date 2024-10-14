@@ -1,1 +1,1 @@
-# comfyui-flux-continuum
+# ComfyUI Flux Continuum
