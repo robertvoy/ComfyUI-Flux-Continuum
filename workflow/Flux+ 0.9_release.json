@@ -1,13 +1,13 @@
 {
-  "last_node_id": 2216,
-  "last_link_id": 3213,
+  "last_node_id": 2217,
+  "last_link_id": 3214,
   "nodes": [
     {
       "id": 925,
       "type": "SetNode",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1278.526123046875
+        "0": 390,
+        "1": 1270
       },
       "size": {
         "0": 210,
@@ -16,7 +16,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 165,
+      "order": 160,
       "mode": 0,
       "inputs": [
         {
@@ -44,8 +44,8 @@
       "id": 1091,
       "type": "SetNode",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1478.526123046875
+        "0": 390,
+        "1": 1470
       },
       "size": {
         "0": 210,
@@ -54,7 +54,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 190,
+      "order": 189,
       "mode": 0,
       "inputs": [
         {
@@ -82,8 +82,8 @@
       "id": 1092,
       "type": "SetNode",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1528.526123046875
+        "0": 390,
+        "1": 1520
       },
       "size": {
         "0": 210,
@@ -92,7 +92,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 191,
+      "order": 190,
       "mode": 0,
       "inputs": [
         {
@@ -120,8 +120,8 @@
       "id": 1093,
       "type": "SetNode",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1568.526123046875
+        "0": 390,
+        "1": 1560
       },
       "size": {
         "0": 210,
@@ -130,7 +130,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 192,
+      "order": 191,
       "mode": 0,
       "inputs": [
         {
@@ -158,8 +158,8 @@
       "id": 1026,
       "type": "ImagePass",
       "pos": {
-        "0": 506.1534118652344,
-        "1": 165.59835815429688
+        "0": 510,
+        "1": 170
       },
       "size": {
         "0": 210,
@@ -168,7 +168,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 141,
+      "order": 151,
       "mode": 0,
       "inputs": [
         {
@@ -198,8 +198,8 @@
       "id": 723,
       "type": "SetNode",
       "pos": {
-        "0": 1013.9601440429688,
-        "1": 695.3356323242188
+        "0": 1010,
+        "1": 700
       },
       "size": {
         "0": 210,
@@ -208,7 +208,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 168,
+      "order": 150,
       "mode": 0,
       "inputs": [
         {
@@ -281,7 +281,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 122,
+      "order": 119,
       "mode": 0,
       "inputs": [
         {
@@ -324,7 +324,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 110,
+      "order": 109,
       "mode": 0,
       "inputs": [
         {
@@ -402,7 +402,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 170,
+      "order": 169,
       "mode": 0,
       "inputs": [
         {
@@ -451,7 +451,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 207,
+      "order": 206,
       "mode": 0,
       "inputs": [
         {
@@ -529,7 +529,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 129,
+      "order": 125,
       "mode": 0,
       "inputs": [
         {
@@ -607,7 +607,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 128,
+      "order": 124,
       "mode": 0,
       "inputs": [
         {
@@ -693,7 +693,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 116,
+      "order": 115,
       "mode": 0,
       "inputs": [
         {
@@ -770,8 +770,8 @@
       "id": 1217,
       "type": "SetNode",
       "pos": {
-        "0": 1679.4189453125,
-        "1": 927.154296875
+        "0": 1690,
+        "1": 930
       },
       "size": {
         "0": 210,
@@ -780,7 +780,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 117,
+      "order": 162,
       "mode": 0,
       "inputs": [
         {
@@ -808,8 +808,8 @@
       "id": 717,
       "type": "GetNode",
       "pos": {
-        "0": 1321.958984375,
-        "1": 146.3354949951172
+        "0": 1320,
+        "1": 150
       },
       "size": {
         "0": 210,
@@ -854,7 +854,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 121,
+      "order": 118,
       "mode": 0,
       "inputs": [
         {
@@ -897,7 +897,7 @@
         26
       ],
       "flags": {},
-      "order": 228,
+      "order": 227,
       "mode": 0,
       "inputs": [
         {
@@ -1029,8 +1029,8 @@
       "id": 1060,
       "type": "VAEDecode",
       "pos": {
-        "0": 7005.35498046875,
-        "1": -398.30224609375
+        "0": 7010,
+        "1": -400
       },
       "size": {
         "0": 168.0600128173828,
@@ -1039,7 +1039,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 250,
+      "order": 249,
       "mode": 0,
       "inputs": [
         {
@@ -1072,8 +1072,8 @@
       "id": 1064,
       "type": "GetNode",
       "pos": {
-        "0": 6836.3564453125,
-        "1": -472.3022155761719
+        "0": 6840,
+        "1": -470
       },
       "size": {
         "0": 210,
@@ -1116,7 +1116,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 239,
+      "order": 238,
       "mode": 0,
       "inputs": [
         {
@@ -1194,7 +1194,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 225,
+      "order": 224,
       "mode": 0,
       "inputs": [
         {
@@ -1233,7 +1233,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 231,
+      "order": 230,
       "mode": 4,
       "inputs": [
         {
@@ -1277,7 +1277,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 206,
+      "order": 205,
       "mode": 4,
       "inputs": [
         {
@@ -1321,7 +1321,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 220,
+      "order": 218,
       "mode": 4,
       "inputs": [
         {
@@ -1365,7 +1365,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 236,
+      "order": 235,
       "mode": 4,
       "inputs": [
         {
@@ -1409,7 +1409,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 167,
+      "order": 147,
       "mode": 0,
       "inputs": [
         {
@@ -1470,7 +1470,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 193,
+      "order": 186,
       "mode": 4,
       "inputs": [
         {
@@ -1523,7 +1523,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 173,
+      "order": 172,
       "mode": 0,
       "inputs": [
         {
@@ -1576,7 +1576,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 172,
+      "order": 171,
       "mode": 0,
       "inputs": [
         {
@@ -1629,7 +1629,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 109,
+      "order": 108,
       "mode": 0,
       "inputs": [
         {
@@ -1747,7 +1747,7 @@
         26
       ],
       "flags": {},
-      "order": 199,
+      "order": 198,
       "mode": 0,
       "inputs": [
         {
@@ -1784,7 +1784,7 @@
         26
       ],
       "flags": {},
-      "order": 198,
+      "order": 197,
       "mode": 0,
       "inputs": [
         {
@@ -1820,7 +1820,7 @@
         26
       ],
       "flags": {},
-      "order": 217,
+      "order": 215,
       "mode": 0,
       "inputs": [
         {
@@ -1858,7 +1858,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 218,
+      "order": 216,
       "mode": 0,
       "inputs": [
         {
@@ -1901,7 +1901,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 240,
+      "order": 239,
       "mode": 0,
       "inputs": [
         {
@@ -1941,7 +1941,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 243,
+      "order": 242,
       "mode": 0,
       "inputs": [
         {
@@ -1979,7 +1979,7 @@
         26
       ],
       "flags": {},
-      "order": 186,
+      "order": 183,
       "mode": 0,
       "inputs": [
         {
@@ -2015,7 +2015,7 @@
         26
       ],
       "flags": {},
-      "order": 177,
+      "order": 176,
       "mode": 0,
       "inputs": [
         {
@@ -2051,7 +2051,7 @@
         26
       ],
       "flags": {},
-      "order": 202,
+      "order": 200,
       "mode": 0,
       "inputs": [
         {
@@ -2123,7 +2123,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 238,
+      "order": 237,
       "mode": 4,
       "inputs": [
         {
@@ -2164,7 +2164,7 @@
         "1": 208.3496856689453
       },
       "flags": {},
-      "order": 246,
+      "order": 245,
       "mode": 4,
       "inputs": [
         {
@@ -2183,8 +2183,8 @@
       "id": 1053,
       "type": "SamplerCustomAdvanced",
       "pos": {
-        "0": 6717.1083984375,
-        "1": -386.3963317871094
+        "0": 6720,
+        "1": -390
       },
       "size": {
         "0": 240,
@@ -2193,7 +2193,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 249,
+      "order": 248,
       "mode": 0,
       "inputs": [
         {
@@ -2257,8 +2257,8 @@
       "id": 1054,
       "type": "DisableNoise",
       "pos": {
-        "0": 6576.10888671875,
-        "1": -444.3962097167969
+        "0": 6580,
+        "1": -440
       },
       "size": {
         "0": 210,
@@ -2301,7 +2301,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 120,
+      "order": 117,
       "mode": 0,
       "inputs": [
         {
@@ -2336,8 +2336,8 @@
       "id": 1510,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 667.5792236328125
+        "0": 390,
+        "1": 640
       },
       "size": {
         "0": 210,
@@ -2347,7 +2347,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 158,
+      "order": 153,
       "mode": 0,
       "inputs": [
         {
@@ -2375,8 +2375,8 @@
       "id": 1271,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 757.5792236328125
+        "0": 390,
+        "1": 730
       },
       "size": {
         "0": 210,
@@ -2386,7 +2386,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 160,
+      "order": 154,
       "mode": 0,
       "inputs": [
         {
@@ -2414,8 +2414,8 @@
       "id": 1272,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 807.5792236328125
+        "0": 390,
+        "1": 780
       },
       "size": {
         "0": 210,
@@ -2425,7 +2425,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 161,
+      "order": 155,
       "mode": 0,
       "inputs": [
         {
@@ -2453,8 +2453,8 @@
       "id": 1508,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 637.5792236328125
+        "0": 390,
+        "1": 610
       },
       "size": {
         "0": 210,
@@ -2463,7 +2463,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 157,
+      "order": 152,
       "mode": 0,
       "inputs": [
         {
@@ -2491,8 +2491,8 @@
       "id": 1095,
       "type": "SetNode",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1188.526123046875
+        "0": 390,
+        "1": 1180
       },
       "size": {
         "0": 210,
@@ -2501,7 +2501,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 163,
+      "order": 159,
       "mode": 0,
       "inputs": [
         {
@@ -2529,17 +2529,18 @@
       "id": 1330,
       "type": "SetNode",
       "pos": {
-        "0": 1634.848388671875,
-        "1": 1129.8006591796875
+        "0": 1640,
+        "1": 1130
       },
       "size": {
         "0": 210,
         "1": 58
       },
       "flags": {
-        "collapsed": true
+        "collapsed": true,
+        "pinned": true
       },
-      "order": 156,
+      "order": 165,
       "mode": 0,
       "inputs": [
         {
@@ -2567,8 +2568,8 @@
       "id": 1331,
       "type": "SetNode",
       "pos": {
-        "0": 1644.848388671875,
-        "1": 1032.8006591796875
+        "0": 1650,
+        "1": 1030
       },
       "size": {
         "0": 210,
@@ -2577,7 +2578,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 118,
+      "order": 163,
       "mode": 0,
       "inputs": [
         {
@@ -2615,7 +2616,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 235,
+      "order": 234,
       "mode": 0,
       "inputs": [
         {
@@ -2684,7 +2685,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 227,
+      "order": 226,
       "mode": 0,
       "inputs": [
         {
@@ -2751,80 +2752,6 @@
       ]
     },
     {
-      "id": 1274,
-      "type": "DenoiseSlider",
-      "pos": {
-        "0": 1530.8482666015625,
-        "1": 910.801025390625
-      },
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            2000
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DenoiseSlider"
-      },
-      "widgets_values": [
-        0.424
-      ]
-    },
-    {
-      "id": 1533,
-      "type": "INTConstant",
-      "pos": {
-        "0": 1532.0367431640625,
-        "1": 1008.5473022460938
-      },
-      "size": {
-        "0": 314.0763244628906,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": false,
-        "pinned": true
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "value",
-          "type": "INT",
-          "links": [
-            2362
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "Resolution Multipy",
-      "properties": {
-        "Node name for S&R": "INTConstant"
-      },
-      "widgets_values": [
-        2
-      ],
-      "color": "#1b4669",
-      "bgcolor": "#29699c"
-    },
-    {
       "id": 1323,
       "type": "GetNode",
       "pos": {
@@ -2838,7 +2765,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2860,34 +2787,11 @@
       "bgcolor": "#353"
     },
     {
-      "id": 1153,
-      "type": "Note",
-      "pos": {
-        "0": 6971.10791015625,
-        "1": -247.39637756347656
-      },
-      "size": {
-        "0": 210.4974822998047,
-        "1": 116.59261322021484
-      },
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "Split Sigmas Denoise\n0.45"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 1281,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 957.5792236328125
+        "0": 390,
+        "1": 930
       },
       "size": {
         "0": 210,
@@ -2897,7 +2801,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 124,
+      "order": 157,
       "mode": 0,
       "inputs": [
         {
@@ -2933,7 +2837,7 @@
         26
       ],
       "flags": {},
-      "order": 194,
+      "order": 193,
       "mode": 4,
       "inputs": [
         {
@@ -2973,7 +2877,7 @@
         26
       ],
       "flags": {},
-      "order": 169,
+      "order": 168,
       "mode": 4,
       "inputs": [
         {
@@ -3016,7 +2920,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 219,
+      "order": 217,
       "mode": 0,
       "inputs": [
         {
@@ -3063,7 +2967,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 230,
+      "order": 229,
       "mode": 0,
       "inputs": [
         {
@@ -3103,7 +3007,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 115,
+      "order": 114,
       "mode": 0,
       "inputs": [
         {
@@ -3144,7 +3048,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3179,7 +3083,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3214,7 +3118,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3249,7 +3153,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3283,7 +3187,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3318,7 +3222,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 23,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3353,7 +3257,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 24,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3387,7 +3291,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3420,7 +3324,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 195,
+      "order": 194,
       "mode": 0,
       "inputs": [
         {
@@ -3546,7 +3450,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3580,7 +3484,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 27,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3615,7 +3519,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 28,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3638,75 +3542,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 1279,
-      "type": "GuidanceSlider",
-      "pos": {
-        "0": 390.6280517578125,
-        "1": 947.5792236328125
-      },
-      "size": {
-        "0": 307.43634033203125,
-        "1": 58
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 32,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            2001
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "GuidanceSlider"
-      },
-      "widgets_values": [
-        2.5
-      ]
-    },
-    {
-      "id": 1573,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": {
-        "0": 390.7073974609375,
-        "1": 1708.526123046875
-      },
-      "size": {
-        "0": 296.9411315917969,
-        "1": 58
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 33,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Save",
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "Save",
-        "showNav": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
-    },
-    {
       "id": 1618,
       "type": "GetNode",
       "pos": {
@@ -3720,7 +3555,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 29,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3755,7 +3590,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 111,
+      "order": 110,
       "mode": 0,
       "inputs": [
         {
@@ -3798,7 +3633,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 30,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3833,7 +3668,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 125,
+      "order": 121,
       "mode": 0,
       "inputs": [
         {
@@ -3866,8 +3701,8 @@
       "id": 1099,
       "type": "GetNode",
       "pos": {
-        "0": 5874.109375,
-        "1": -216.3966064453125
+        "0": 5870,
+        "1": -220
       },
       "size": {
         "0": 210,
@@ -3876,7 +3711,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 31,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3901,8 +3736,8 @@
       "id": 1056,
       "type": "RandomNoise",
       "pos": {
-        "0": 5940.10986328125,
-        "1": -391.3963623046875
+        "0": 5940,
+        "1": -390
       },
       "size": {
         "0": 210,
@@ -3911,7 +3746,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 126,
+      "order": 122,
       "mode": 0,
       "inputs": [
         {
@@ -3956,7 +3791,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 224,
+      "order": 223,
       "mode": 0,
       "inputs": [
         {
@@ -4021,7 +3856,7 @@
         30
       ],
       "flags": {},
-      "order": 234,
+      "order": 233,
       "mode": 4,
       "inputs": [
         {
@@ -4070,7 +3905,7 @@
         30
       ],
       "flags": {},
-      "order": 247,
+      "order": 246,
       "mode": 4,
       "inputs": [
         {
@@ -4111,8 +3946,8 @@
       "id": 1617,
       "type": "SetNode",
       "pos": {
-        "0": 511.58587646484375,
-        "1": 1086.63037109375
+        "0": 510,
+        "1": 1060
       },
       "size": {
         "0": 210,
@@ -4121,7 +3956,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 159,
+      "order": 158,
       "mode": 0,
       "inputs": [
         {
@@ -4159,7 +3994,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 205,
+      "order": 203,
       "mode": 4,
       "inputs": [
         {
@@ -4202,8 +4037,8 @@
       "id": 1520,
       "type": "GetNode",
       "pos": {
-        "0": 5809.525390625,
-        "1": -307.6884765625
+        "0": 5810,
+        "1": -310
       },
       "size": {
         "0": 210,
@@ -4212,7 +4047,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 37,
+      "order": 32,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4238,8 +4073,8 @@
       "id": 1057,
       "type": "GetNode",
       "pos": {
-        "0": 5810.525390625,
-        "1": -390.6884765625
+        "0": 5810,
+        "1": -390
       },
       "size": {
         "0": 210,
@@ -4248,7 +4083,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 38,
+      "order": 33,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4273,8 +4108,8 @@
       "id": 1358,
       "type": "BasicGuider",
       "pos": {
-        "0": 5819.525390625,
-        "1": -349.6884765625
+        "0": 5820,
+        "1": -350
       },
       "size": {
         "0": 241.79998779296875,
@@ -4283,7 +4118,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 215,
+      "order": 213,
       "mode": 0,
       "inputs": [
         {
@@ -4328,7 +4163,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 34,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4362,7 +4197,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 35,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4396,7 +4231,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 127,
+      "order": 123,
       "mode": 0,
       "inputs": [
         {
@@ -4469,7 +4304,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 119,
+      "order": 116,
       "mode": 0,
       "inputs": [
         {
@@ -4513,7 +4348,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 41,
+      "order": 36,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4537,15 +4372,15 @@
       "id": 1055,
       "type": "InjectLatentNoise+",
       "pos": {
-        "0": 6425.525390625,
-        "1": -376.6884765625
+        "0": 6430,
+        "1": -380
       },
       "size": {
         "0": 264.6065673828125,
         "1": 150
       },
       "flags": {},
-      "order": 248,
+      "order": 247,
       "mode": 0,
       "inputs": [
         {
@@ -4585,8 +4420,8 @@
       "id": 1051,
       "type": "SamplerCustomAdvanced",
       "pos": {
-        "0": 6105.525390625,
-        "1": -369.6884765625
+        "0": 6110,
+        "1": -370
       },
       "size": {
         "0": 236.8000030517578,
@@ -4595,7 +4430,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 226,
+      "order": 225,
       "mode": 0,
       "inputs": [
         {
@@ -4661,8 +4496,8 @@
       "id": 1052,
       "type": "SplitSigmasDenoise",
       "pos": {
-        "0": 5813.525390625,
-        "1": -261.6884765625
+        "0": 5810,
+        "1": -260
       },
       "size": {
         "0": 210,
@@ -4671,7 +4506,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 211,
+      "order": 210,
       "mode": 0,
       "inputs": [
         {
@@ -4712,7 +4547,7 @@
       "type": "PlaySound|pysssss",
       "pos": {
         "0": 1160,
-        "1": 145
+        "1": 150
       },
       "size": {
         "0": 315,
@@ -4721,7 +4556,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 113,
+      "order": 112,
       "mode": 0,
       "inputs": [
         {
@@ -4748,35 +4583,6 @@
       ]
     },
     {
-      "id": 905,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 746,
-        "1": 139
-      },
-      "size": {
-        "0": 726.1561889648438,
-        "1": 496.16754150390625
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 114,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1575
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": []
-    },
-    {
       "id": 1298,
       "type": "GetNode",
       "pos": {
@@ -4790,7 +4596,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 42,
+      "order": 37,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4825,7 +4631,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 43,
+      "order": 38,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4860,7 +4666,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 44,
+      "order": 39,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4895,7 +4701,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 133,
+      "order": 129,
       "mode": 0,
       "inputs": [
         {
@@ -4938,7 +4744,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 232,
+      "order": 231,
       "mode": 0,
       "inputs": [
         {
@@ -4981,7 +4787,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 131,
+      "order": 127,
       "mode": 0,
       "inputs": [
         {
@@ -5027,7 +4833,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 45,
+      "order": 40,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5062,7 +4868,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 46,
+      "order": 41,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5097,7 +4903,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 47,
+      "order": 42,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5134,7 +4940,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 187,
+      "order": 184,
       "mode": 0,
       "inputs": [
         {
@@ -5176,7 +4982,7 @@
         26
       ],
       "flags": {},
-      "order": 149,
+      "order": 143,
       "mode": 0,
       "inputs": [
         {
@@ -5214,7 +5020,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 142,
+      "order": 137,
       "mode": 0,
       "inputs": [
         {
@@ -5254,7 +5060,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 150,
+      "order": 144,
       "mode": 0,
       "inputs": [
         {
@@ -5294,7 +5100,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 48,
+      "order": 43,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5330,7 +5136,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 49,
+      "order": 44,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5365,7 +5171,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 50,
+      "order": 45,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5402,7 +5208,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 112,
+      "order": 111,
       "mode": 0,
       "inputs": [
         {
@@ -5453,7 +5259,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 130,
+      "order": 126,
       "mode": 0,
       "inputs": [
         {
@@ -5494,7 +5300,7 @@
         "1": 262
       },
       "flags": {},
-      "order": 223,
+      "order": 222,
       "mode": 0,
       "inputs": [
         {
@@ -5620,7 +5426,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 51,
+      "order": 46,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5654,7 +5460,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 52,
+      "order": 47,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5689,7 +5495,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 53,
+      "order": 48,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5722,7 +5528,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 244,
+      "order": 243,
       "mode": 4,
       "inputs": [
         {
@@ -5766,7 +5572,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 245,
+      "order": 244,
       "mode": 4,
       "inputs": [
         {
@@ -5805,7 +5611,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 241,
+      "order": 240,
       "mode": 4,
       "inputs": [
         {
@@ -5847,7 +5653,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 54,
+      "order": 49,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5882,7 +5688,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 176,
+      "order": 175,
       "mode": 0,
       "inputs": [
         {
@@ -5942,7 +5748,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 203,
+      "order": 201,
       "mode": 0,
       "inputs": [
         {
@@ -6011,7 +5817,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 55,
+      "order": 50,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -6037,8 +5843,8 @@
       "id": 1115,
       "type": "GetNode",
       "pos": {
-        "0": 390.256103515625,
-        "1": 363.78619384765625
+        "0": 390,
+        "1": 350
       },
       "size": {
         "0": 210,
@@ -6047,7 +5853,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 56,
+      "order": 51,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -6071,7 +5877,7 @@
       "type": "SetNode",
       "pos": {
         "0": 970,
-        "1": 1472.93798828125
+        "1": 1440
       },
       "size": {
         "0": 210,
@@ -6080,7 +5886,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 166,
+      "order": 148,
       "mode": 0,
       "inputs": [
         {
@@ -6105,43 +5911,11 @@
       ]
     },
     {
-      "id": 2031,
-      "type": "GetNode",
-      "pos": {
-        "0": 1062,
-        "1": 988
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 57,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            2990
-          ]
-        }
-      ],
-      "title": "Get_wildcards",
-      "properties": {},
-      "widgets_values": [
-        "wildcards"
-      ]
-    },
-    {
       "id": 1472,
       "type": "ttN concat",
       "pos": {
-        "0": 1211,
-        "1": 951
+        "0": 1210,
+        "1": 950
       },
       "size": {
         "0": 210,
@@ -6150,7 +5924,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 153,
+      "order": 149,
       "mode": 0,
       "inputs": [
         {
@@ -6193,50 +5967,11 @@
       ]
     },
     {
-      "id": 788,
-      "type": "SetNode",
-      "pos": {
-        "0": 1344,
-        "1": 988
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 189,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "link": 2358
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "title": "Set_Tags",
-      "properties": {
-        "previousName": "Tags"
-      },
-      "widgets_values": [
-        "Tags"
-      ]
-    },
-    {
       "id": 1552,
       "type": "GetNode",
       "pos": {
         "0": 910,
-        "1": 1072.93798828125
+        "1": 1040
       },
       "size": {
         "0": 210,
@@ -6245,7 +5980,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 58,
+      "order": 52,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -6269,7 +6004,7 @@
       "type": "DownloadAndLoadFlorence2Model",
       "pos": {
         "0": 1080,
-        "1": 1072.93798828125
+        "1": 1040
       },
       "size": {
         "0": 243.60000610351562,
@@ -6278,7 +6013,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 59,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
@@ -6323,7 +6058,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 123,
+      "order": 120,
       "mode": 0,
       "inputs": [
         {
@@ -6377,7 +6112,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 196,
+      "order": 195,
       "mode": 0,
       "inputs": [
         {
@@ -6462,7 +6197,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 197,
+      "order": 196,
       "mode": 0,
       "inputs": [
         {
@@ -6516,7 +6251,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 60,
+      "order": 54,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -6551,7 +6286,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 210,
+      "order": 209,
       "mode": 0,
       "inputs": [
         {
@@ -6590,8 +6325,8 @@
       "id": 1106,
       "type": "GetNode",
       "pos": {
-        "0": 399.256103515625,
-        "1": 322.78619384765625
+        "0": 400,
+        "1": 310
       },
       "size": {
         "0": 210,
@@ -6600,7 +6335,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 61,
+      "order": 55,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -6620,29 +6355,6 @@
       ]
     },
     {
-      "id": 1691,
-      "type": "Note",
-      "pos": {
-        "0": 4416.44287109375,
-        "1": 1428.2359619140625
-      },
-      "size": {
-        "0": 247.28199768066406,
-        "1": 78.5302734375
-      },
-      "flags": {},
-      "order": 62,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "If denoise = 1.0, then switch to VAE encode for inpainting"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 644,
       "type": "SetNode",
       "pos": {
@@ -6656,7 +6368,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 204,
+      "order": 202,
       "mode": 0,
       "inputs": [
         {
@@ -6696,7 +6408,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 171,
+      "order": 170,
       "mode": 0,
       "inputs": [
         {
@@ -6734,7 +6446,7 @@
         26
       ],
       "flags": {},
-      "order": 216,
+      "order": 214,
       "mode": 0,
       "inputs": [
         {
@@ -6770,7 +6482,7 @@
         26
       ],
       "flags": {},
-      "order": 212,
+      "order": 211,
       "mode": 0,
       "inputs": [
         {
@@ -6809,7 +6521,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 63,
+      "order": 56,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -6842,7 +6554,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 140,
+      "order": 136,
       "mode": 4,
       "inputs": [
         {
@@ -6934,7 +6646,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 180,
+      "order": 179,
       "mode": 4,
       "inputs": [
         {
@@ -6974,7 +6686,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 64,
+      "order": 57,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -7009,7 +6721,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 242,
+      "order": 241,
       "mode": 0,
       "inputs": [
         {
@@ -7039,8 +6751,8 @@
       "id": 1061,
       "type": "SetNode",
       "pos": {
-        "0": 7026.021484375,
-        "1": -335.821533203125
+        "0": 7030,
+        "1": -340
       },
       "size": {
         "0": 210,
@@ -7049,7 +6761,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 251,
+      "order": 250,
       "mode": 0,
       "inputs": [
         {
@@ -7089,7 +6801,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 221,
+      "order": 220,
       "mode": 0,
       "inputs": [
         {
@@ -7129,7 +6841,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 209,
+      "order": 208,
       "mode": 0,
       "inputs": [
         {
@@ -7169,7 +6881,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 65,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -7207,7 +6919,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 66,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -7245,7 +6957,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 233,
+      "order": 232,
       "mode": 0,
       "inputs": [
         {
@@ -7283,7 +6995,7 @@
         26
       ],
       "flags": {},
-      "order": 137,
+      "order": 133,
       "mode": 0,
       "inputs": [
         {
@@ -7311,8 +7023,8 @@
       "id": 1023,
       "type": "SetNode",
       "pos": {
-        "0": 533,
-        "1": 207
+        "0": 530,
+        "1": 210
       },
       "size": {
         "0": 210,
@@ -7321,7 +7033,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 181,
+      "order": 188,
       "mode": 0,
       "inputs": [
         {
@@ -7346,47 +7058,11 @@
       ]
     },
     {
-      "id": 713,
-      "type": "GetNode",
-      "pos": {
-        "0": 399,
-        "1": 167
-      },
-      "size": {
-        "0": 285.44219970703125,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": false,
-        "pinned": true
-      },
-      "order": 67,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1744
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Get_Out - txt2img",
-      "properties": {},
-      "widgets_values": [
-        "Out - txt2img"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 1116,
       "type": "SetNode",
       "pos": {
-        "0": 541.256103515625,
-        "1": 402.207275390625
+        "0": 540,
+        "1": 390
       },
       "size": {
         "0": 285.375,
@@ -7395,7 +7071,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 179,
+      "order": 178,
       "mode": 0,
       "inputs": [
         {
@@ -7433,7 +7109,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 68,
+      "order": 60,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -7455,91 +7131,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 1103,
-      "type": "Power Lora Loader (rgthree)",
-      "pos": {
-        "0": 388.256103515625,
-        "1": 324.207275390625
-      },
-      "size": {
-        "0": 305.2529602050781,
-        "1": 219.04501342773438
-      },
-      "flags": {},
-      "order": 139,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 3092,
-          "dir": 3
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 2956,
-          "dir": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1863
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "dir": 4
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [],
-          "slot_index": 1,
-          "shape": 3,
-          "dir": 4
-        }
-      ],
-      "title": "Lora Loader",
-      "properties": {
-        "Show Strengths": "Single Strength"
-      },
-      "widgets_values": [
-        null,
-        {
-          "type": "PowerLoraLoaderHeaderWidget"
-        },
-        {
-          "on": false,
-          "lora": "FLUX\\Kodak_MC3_Style_F1D-000019.safetensors",
-          "strength": 0.8,
-          "strengthTwo": null
-        },
-        {
-          "on": false,
-          "lora": "FLUX\\olympusd450_lora.safetensors",
-          "strength": 0.9999999999999996,
-          "strengthTwo": null
-        },
-        {
-          "on": false,
-          "lora": "FLUX\\FLUX-dev-lora-add_details.safetensors",
-          "strength": 0.4,
-          "strengthTwo": null
-        },
-        {
-          "on": false,
-          "lora": "FLUX\\Kodak Motion Picture Film style v1.safetensors",
-          "strength": 0.6,
-          "strengthTwo": null
-        },
-        null,
-        ""
-      ]
-    },
-    {
       "id": 587,
       "type": "UNETLoader",
       "pos": {
@@ -7551,7 +7142,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 69,
+      "order": 61,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -7587,7 +7178,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 200,
+      "order": 199,
       "mode": 0,
       "inputs": [
         {
@@ -7636,7 +7227,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 145,
+      "order": 139,
       "mode": 0,
       "inputs": [
         {
@@ -7682,7 +7273,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 70,
+      "order": 62,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -7717,7 +7308,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 71,
+      "order": 63,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -7752,7 +7343,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 151,
+      "order": 145,
       "mode": 0,
       "inputs": [
         {
@@ -7821,7 +7412,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 143,
+      "order": 138,
       "mode": 0,
       "inputs": [
         {
@@ -7870,7 +7461,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 72,
+      "order": 64,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -7905,7 +7496,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 182,
+      "order": 180,
       "mode": 0,
       "inputs": [
         {
@@ -7947,7 +7538,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 146,
+      "order": 140,
       "mode": 0,
       "inputs": [
         {
@@ -7989,7 +7580,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 73,
+      "order": 65,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8024,7 +7615,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 74,
+      "order": 66,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8058,7 +7649,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 135,
+      "order": 131,
       "mode": 0,
       "inputs": [
         {
@@ -8132,7 +7723,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 136,
+      "order": 132,
       "mode": 0,
       "inputs": [
         {
@@ -8202,7 +7793,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 185,
+      "order": 182,
       "mode": 0,
       "inputs": [
         {
@@ -8254,7 +7845,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 75,
+      "order": 67,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8276,77 +7867,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 1321,
-      "type": "SetNode",
-      "pos": {
-        "0": 1767,
-        "1": 824
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 154,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "link": 3213
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_mask",
-      "properties": {
-        "previousName": "mask"
-      },
-      "widgets_values": [
-        "mask"
-      ]
-    },
-    {
-      "id": 1344,
-      "type": "GetNode",
-      "pos": {
-        "0": 1535.2271728515625,
-        "1": 1169.7791748046875
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 76,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            2792
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Get_loadImage",
-      "properties": {},
-      "widgets_values": [
-        "loadImage"
-      ]
-    },
-    {
       "id": 712,
       "type": "SetNode",
       "pos": {
@@ -8360,7 +7880,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 237,
+      "order": 236,
       "mode": 0,
       "inputs": [
         {
@@ -8400,7 +7920,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 77,
+      "order": 68,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8435,7 +7955,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 174,
+      "order": 173,
       "mode": 0,
       "inputs": [
         {
@@ -8486,7 +8006,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 78,
+      "order": 69,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8520,7 +8040,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 175,
+      "order": 174,
       "mode": 0,
       "inputs": [
         {
@@ -8564,7 +8084,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 134,
+      "order": 130,
       "mode": 0,
       "inputs": [
         {
@@ -8608,7 +8128,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 79,
+      "order": 70,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8633,8 +8153,8 @@
       "id": 1320,
       "type": "SetNode",
       "pos": {
-        "0": 1532,
-        "1": 167
+        "0": 1540,
+        "1": 170
       },
       "size": {
         "0": 210,
@@ -8643,7 +8163,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 155,
+      "order": 167,
       "mode": 0,
       "inputs": [
         {
@@ -8681,7 +8201,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 80,
+      "order": 71,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -8702,7 +8222,7 @@
       "id": 1630,
       "type": "Label (rgthree)",
       "pos": {
-        "0": 1033,
+        "0": 1030,
         "1": 40
       },
       "size": {
@@ -8712,7 +8232,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 81,
+      "order": 72,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -8743,7 +8263,7 @@
       "flags": {
         "allow_interaction": true
       },
-      "order": 82,
+      "order": 73,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -8774,7 +8294,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 148,
+      "order": 142,
       "mode": 0,
       "inputs": [
         {
@@ -8819,7 +8339,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 83,
+      "order": 74,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8855,7 +8375,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 84,
+      "order": 75,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -8890,7 +8410,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 147,
+      "order": 141,
       "mode": 0,
       "inputs": [
         {
@@ -8969,7 +8489,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 85,
+      "order": 76,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9003,7 +8523,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 86,
+      "order": 77,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9038,7 +8558,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 222,
+      "order": 221,
       "mode": 0,
       "inputs": [
         {
@@ -9078,7 +8598,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 87,
+      "order": 78,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9113,7 +8633,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 88,
+      "order": 79,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9147,7 +8667,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 89,
+      "order": 80,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9182,7 +8702,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 90,
+      "order": 81,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9216,7 +8736,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 91,
+      "order": 82,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9242,7 +8762,7 @@
       "type": "Florence2Run",
       "pos": {
         "0": 750,
-        "1": 1072.93798828125
+        "1": 1040
       },
       "size": {
         "0": 380.501220703125,
@@ -9251,7 +8771,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 138,
+      "order": 134,
       "mode": 0,
       "inputs": [
         {
@@ -9322,7 +8842,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 92,
+      "order": 83,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9362,7 +8882,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 188,
+      "order": 185,
       "mode": 0,
       "inputs": [
         {
@@ -9421,7 +8941,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 152,
+      "order": 146,
       "mode": 0,
       "inputs": [
         {
@@ -9462,7 +8982,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 229,
+      "order": 228,
       "mode": 0,
       "inputs": [
         {
@@ -9500,7 +9020,7 @@
         "1": 154
       },
       "flags": {},
-      "order": 184,
+      "order": 181,
       "mode": 0,
       "inputs": [
         {
@@ -9543,7 +9063,7 @@
         "1": 526
       },
       "flags": {},
-      "order": 208,
+      "order": 207,
       "mode": 0,
       "inputs": [
         {
@@ -9659,7 +9179,7 @@
         "1": 544
       },
       "flags": {},
-      "order": 213,
+      "order": 212,
       "mode": 0,
       "inputs": [
         {
@@ -9798,8 +9318,8 @@
       "id": 1280,
       "type": "SetNode",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 857.5792236328125
+        "0": 390,
+        "1": 830
       },
       "size": {
         "0": 210,
@@ -9809,7 +9329,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 162,
+      "order": 156,
       "mode": 0,
       "inputs": [
         {
@@ -9834,20 +9354,348 @@
       ]
     },
     {
+      "id": 1417,
+      "type": "GetNode",
+      "pos": {
+        "0": 4118,
+        "1": -511
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 84,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            2218
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_batch",
+      "properties": {},
+      "widgets_values": [
+        "batch"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 926,
+      "type": "GetNode",
+      "pos": {
+        "0": 4124,
+        "1": -465
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 85,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            2226
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_seed_0",
+      "properties": {},
+      "widgets_values": [
+        "seed_0"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 676,
+      "type": "LoadCurrentWorkflowJSON",
+      "pos": {
+        "0": 4116,
+        "1": -605
+      },
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 86,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Workflow JSON",
+          "type": "JSON",
+          "links": [
+            1260
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadCurrentWorkflowJSON"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 832,
+      "type": "SetNode",
+      "pos": {
+        "0": 4470,
+        "1": -242
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 128,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "link": 1479
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_VAE",
+      "properties": {
+        "previousName": "VAE"
+      },
+      "widgets_values": [
+        "VAE"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 1551,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 750,
+        "1": 1040
+      },
+      "size": [
+        720,
+        180
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 177,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 2375,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "title": "Prompt Suggestion",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "a digital illustration in a highly detailed, semi-realistic style, the subject is a man with a light complexion and a muscular physique, he has a full beard and neatly trimmed beard, and his facial expression is neutral, he is wearing a blue hooded cloak with intricate, blue patterns, which appears to be made of fabric with a slight sheen, the cloak's hood is slightly open, revealing a glimpse of his shoulders, the man's face is covered by a large, blue, ornate hat with a golden, star-like design at the center, resembling a magic or magical realm, the background is a plain, off-white color, which makes the subject stand out prominently, the texture of the cloak and hat is smooth and polished, with a glossy finish that enhances the realism of the illustration, the overall composition is symmetrical, with the head facing slightly to the left, creating a sense of depth and mystery, the illustration is signed mikoto in the bottom right corner, indicating the artist's name"
+      ]
+    },
+    {
+      "id": 1471,
+      "type": "ImpactWildcardProcessor",
+      "pos": {
+        "0": 750,
+        "1": 1260
+      },
+      "size": [
+        720,
+        240
+      ],
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 87,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2989
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactWildcardProcessor"
+      },
+      "widgets_values": [
+        "",
+        "",
+        true,
+        754102869587890,
+        "fixed",
+        "Select the Wildcard to add to the text"
+      ]
+    },
+    {
+      "id": 905,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 750,
+        "1": 110
+      },
+      "size": [
+        720,
+        510
+      ],
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 113,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1575
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2031,
+      "type": "GetNode",
+      "pos": {
+        "0": 1060,
+        "1": 970
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 88,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2990
+          ]
+        }
+      ],
+      "title": "Get_wildcards",
+      "properties": {},
+      "widgets_values": [
+        "wildcards"
+      ]
+    },
+    {
+      "id": 788,
+      "type": "SetNode",
+      "pos": {
+        "0": 1340,
+        "1": 970
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 187,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 2358
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "title": "Set_Tags",
+      "properties": {
+        "previousName": "Tags"
+      },
+      "widgets_values": [
+        "Tags"
+      ]
+    },
+    {
       "id": 789,
       "type": "ttN text",
       "pos": {
         "0": 750,
-        "1": 870
+        "1": 850
       },
-      "size": {
-        "0": 711.8300170898438,
-        "1": 117.27002716064453
-      },
+      "size": [
+        720,
+        120
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 93,
+      "order": 89,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -9873,138 +9721,183 @@
       "bgcolor": "#355"
     },
     {
-      "id": 2214,
-      "type": "LoadImage",
+      "id": 722,
+      "type": "ttN text",
       "pos": {
-        "0": 1510,
-        "1": 445
+        "0": 750,
+        "1": 660
       },
       "size": {
-        "0": 367.8194274902344,
-        "1": 378.50531005859375
+        "0": 720.005126953125,
+        "1": 153.86546325683594
       },
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 90,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            1334
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "ttN text",
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "a digital illustration in a highly detailed, semi-realistic style, the subject is a man with a light complexion and a muscular physique, he has a full beard and neatly trimmed beard, and his facial expression is neutral, he is wearing a blue hooded cloak with intricate, blue patterns, which appears to be made of fabric with a slight sheen, the cloak's hood is slightly open, revealing a glimpse of his shoulders, the man's face is covered by a large, blue, ornate hat with a golden, star-like design at the center, resembling a magic or magical realm, the background is a plain, off-white color, which makes the subject stand out prominently, the texture of the cloak and hat is smooth and polished, with a glossy finish that enhances the realism of the illustration, the overall composition is symmetrical, with the head facing slightly to the left, creating a sense of depth and mystery, the illustration is signed mikoto in the bottom right corner, indicating the artist's name"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 713,
+      "type": "GetNode",
+      "pos": {
+        "0": 390,
+        "1": 160
+      },
+      "size": [
+        310,
+        60
+      ],
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 91,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1744
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_Out - txt2img",
+      "properties": {},
+      "widgets_values": [
+        "Out - txt2img"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 1103,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": {
+        "0": 390,
+        "1": 310
+      },
+      "size": [
+        310,
+        210
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 94,
+      "order": 135,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [],
-          "slot_index": 0,
-          "shape": 3
+          "name": "model",
+          "type": "MODEL",
+          "link": 3092,
+          "dir": 3
         },
         {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            3213
-          ],
-          "slot_index": 1,
-          "shape": 3
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2956,
+          "dir": 3
         }
       ],
-      "title": "Mask",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "clipspace/clipspace-mask-995728.png [input]",
-        "image"
-      ]
-    },
-    {
-      "id": 1209,
-      "type": "LoadImage",
-      "pos": {
-        "0": 1513,
-        "1": 138
-      },
-      "size": {
-        "0": 360.20770263671875,
-        "1": 372.85479736328125
-      },
-      "flags": {},
-      "order": 95,
-      "mode": 0,
-      "inputs": [],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            2040
+            1863
           ],
           "slot_index": 0,
-          "shape": 3
+          "shape": 3,
+          "dir": 4
         },
         {
-          "name": "MASK",
-          "type": "MASK",
+          "name": "CLIP",
+          "type": "CLIP",
           "links": [],
           "slot_index": 1,
-          "shape": 3
+          "shape": 3,
+          "dir": 4
         }
       ],
+      "title": "Lora Loader",
       "properties": {
-        "Node name for S&R": "LoadImage"
+        "Show Strengths": "Single Strength"
       },
       "widgets_values": [
-        "ComfyUI_temp_csxfc_00005_.png [temp]",
-        "image"
-      ]
-    },
-    {
-      "id": 1534,
-      "type": "UpscaleModelLoader",
-      "pos": {
-        "0": 1529.2271728515625,
-        "1": 1110.7791748046875
-      },
-      "size": {
-        "0": 318.35052490234375,
-        "1": 58
-      },
-      "flags": {},
-      "order": 96,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
+        null,
         {
-          "name": "UPSCALE_MODEL",
-          "type": "UPSCALE_MODEL",
-          "links": [
-            2361
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UpscaleModelLoader"
-      },
-      "widgets_values": [
-        "4xFaceUpDAT.pth"
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": false,
+          "lora": "FLUX\\Kodak_MC3_Style_F1D-000019.safetensors",
+          "strength": 0.8,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "FLUX\\olympusd450_lora.safetensors",
+          "strength": 0.9999999999999996,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "FLUX\\FLUX-dev-lora-add_details.safetensors",
+          "strength": 0.4,
+          "strengthTwo": null
+        },
+        {
+          "on": false,
+          "lora": "FLUX\\Kodak Motion Picture Film style v1.safetensors",
+          "strength": 0.6,
+          "strengthTwo": null
+        },
+        null,
+        ""
       ]
     },
     {
       "id": 1498,
       "type": "Sampler Selector (Image Saver)",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 627.5792236328125
+        "0": 390,
+        "1": 590
       },
-      "size": {
-        "0": 306.28106689453125,
-        "1": 78
-      },
+      "size": [
+        310,
+        80
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 97,
+      "order": 92,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10036,55 +9929,20 @@
       ]
     },
     {
-      "id": 1629,
-      "type": "MaxShiftSlider",
-      "pos": {
-        "0": 390.6280517578125,
-        "1": 1041.578857421875
-      },
-      "size": {
-        "0": 308.22637939453125,
-        "1": 58
-      },
-      "flags": {
-        "pinned": true
-      },
-      "order": 98,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            2418
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "MaxShiftSlider"
-      },
-      "widgets_values": [
-        1.1500000000000001
-      ]
-    },
-    {
       "id": 1506,
       "type": "Scheduler Selector (Comfy) (Image Saver)",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 741.5792236328125
+        "0": 390,
+        "1": 710
       },
-      "size": {
-        "0": 306.3755798339844,
-        "1": 78
-      },
+      "size": [
+        310,
+        80
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 99,
+      "order": 93,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10119,17 +9977,17 @@
       "id": 1278,
       "type": "StepSlider",
       "pos": {
-        "0": 390.6280517578125,
-        "1": 853.5792236328125
+        "0": 390,
+        "1": 830
       },
-      "size": {
-        "0": 305.6446533203125,
-        "1": 58
-      },
+      "size": [
+        310,
+        60
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 100,
+      "order": 94,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10151,20 +10009,90 @@
       ]
     },
     {
-      "id": 1488,
-      "type": "BatchSlider",
+      "id": 1279,
+      "type": "GuidanceSlider",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1168.526123046875
+        "0": 390,
+        "1": 930
+      },
+      "size": [
+        310,
+        60
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 95,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            2001
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GuidanceSlider"
+      },
+      "widgets_values": [
+        2.5
+      ]
+    },
+    {
+      "id": 1629,
+      "type": "MaxShiftSlider",
+      "pos": {
+        "0": 390,
+        "1": 1030
       },
       "size": {
-        "0": 307.46282958984375,
+        "0": 308.22637939453125,
         "1": 58
       },
       "flags": {
         "pinned": true
       },
-      "order": 101,
+      "order": 96,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            2418
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaxShiftSlider"
+      },
+      "widgets_values": [
+        1.1500000000000001
+      ]
+    },
+    {
+      "id": 1488,
+      "type": "BatchSlider",
+      "pos": {
+        "0": 390,
+        "1": 1150
+      },
+      "size": [
+        310,
+        60
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 97,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10172,8 +10100,7 @@
           "name": "INT",
           "type": "INT",
           "links": [
-            2305,
-            2306
+            2305
           ],
           "slot_index": 0,
           "shape": 3
@@ -10190,17 +10117,17 @@
       "id": 922,
       "type": "Seed (rgthree)",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1261.526123046875
+        "0": 390,
+        "1": 1250
       },
-      "size": {
-        "0": 302.695556640625,
-        "1": 130
-      },
+      "size": [
+        310,
+        130
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 102,
+      "order": 98,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -10225,26 +10152,128 @@
       ]
     },
     {
-      "id": 1090,
-      "type": "SDXLEmptyLatentSizePicker+",
+      "id": 1579,
+      "type": "Fast Groups Bypasser (rgthree)",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1431.526123046875
+        "0": 390,
+        "1": 1610
       },
-      "size": {
-        "0": 299.1329650878906,
-        "1": 146
-      },
+      "size": [
+        310,
+        60
+      ],
       "flags": {
         "pinned": true
       },
-      "order": 164,
+      "order": 99,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "MultiGPU",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "Multi GPU",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 1573,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": {
+        "0": 390,
+        "1": 1710
+      },
+      "size": [
+        310,
+        60
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 100,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Save",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "Save",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      }
+    },
+    {
+      "id": 2217,
+      "type": "GetNode",
+      "pos": {
+        "0": 400,
+        "1": 1450
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": true
+      },
+      "order": 101,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            3214
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_batch",
+      "properties": {},
+      "widgets_values": [
+        "batch"
+      ]
+    },
+    {
+      "id": 1090,
+      "type": "SDXLEmptyLatentSizePicker+",
+      "pos": {
+        "0": 390,
+        "1": 1420
+      },
+      "size": [
+        310,
+        150
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 161,
       "mode": 0,
       "inputs": [
         {
           "name": "batch_size",
           "type": "INT",
-          "link": 2306,
+          "link": 3214,
           "widget": {
             "name": "batch_size"
           }
@@ -10290,17 +10319,53 @@
       ]
     },
     {
-      "id": 1579,
-      "type": "Fast Groups Bypasser (rgthree)",
+      "id": 1274,
+      "type": "DenoiseSlider",
       "pos": {
-        "0": 390.7073974609375,
-        "1": 1614.526123046875
+        "0": 1520,
+        "1": 890
       },
-      "size": {
-        "0": 294.9411315917969,
-        "1": 58
-      },
+      "size": [
+        310,
+        60
+      ],
       "flags": {
+        "pinned": true
+      },
+      "order": 102,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            2000
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DenoiseSlider"
+      },
+      "widgets_values": [
+        0.424
+      ]
+    },
+    {
+      "id": 1533,
+      "type": "INTConstant",
+      "pos": {
+        "0": 1520,
+        "1": 990
+      },
+      "size": [
+        310,
+        60
+      ],
+      "flags": {
+        "collapsed": false,
         "pinned": true
       },
       "order": 103,
@@ -10308,376 +10373,109 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
+          "name": "value",
+          "type": "INT",
+          "links": [
+            2362
+          ],
+          "slot_index": 0,
+          "shape": 3
         }
       ],
-      "title": "MultiGPU",
+      "title": "Resolution Multipy",
       "properties": {
-        "matchColors": "",
-        "matchTitle": "Multi GPU",
-        "showNav": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      }
+        "Node name for S&R": "INTConstant"
+      },
+      "widgets_values": [
+        2
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
     },
     {
-      "id": 1471,
-      "type": "ImpactWildcardProcessor",
+      "id": 1344,
+      "type": "GetNode",
       "pos": {
-        "0": 750,
-        "1": 1282.93798828125
+        "0": 1540,
+        "1": 1200
       },
       "size": {
-        "0": 716.346923828125,
-        "1": 242.9137725830078
+        "0": 210,
+        "1": 58
       },
       "flags": {
-        "collapsed": false
+        "collapsed": true,
+        "pinned": true
       },
       "order": 104,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "STRING",
-          "type": "STRING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            2989
+            2792
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
-      "properties": {
-        "Node name for S&R": "ImpactWildcardProcessor"
-      },
+      "title": "Get_loadImage",
+      "properties": {},
       "widgets_values": [
-        "",
-        "",
-        true,
-        754102869587890,
-        "fixed",
-        "Select the Wildcard to add to the text"
+        "loadImage"
       ]
     },
     {
-      "id": 1417,
-      "type": "GetNode",
+      "id": 1534,
+      "type": "UpscaleModelLoader",
       "pos": {
-        "0": 4118,
-        "1": -511
+        "0": 1520,
+        "1": 1090
       },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
+      "size": [
+        310,
+        60
+      ],
       "flags": {
-        "collapsed": true
+        "pinned": true
       },
       "order": 105,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "INT",
-          "type": "INT",
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
           "links": [
-            2218
+            2361
           ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Get_batch",
-      "properties": {},
-      "widgets_values": [
-        "batch"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 926,
-      "type": "GetNode",
-      "pos": {
-        "0": 4124,
-        "1": -465
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 106,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            2226
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "Get_seed_0",
-      "properties": {},
-      "widgets_values": [
-        "seed_0"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 676,
-      "type": "LoadCurrentWorkflowJSON",
-      "pos": {
-        "0": 4116,
-        "1": -605
-      },
-      "size": {
-        "0": 210,
-        "1": 26
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 107,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "Workflow JSON",
-          "type": "JSON",
-          "links": [
-            1260
-          ],
+          "slot_index": 0,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "LoadCurrentWorkflowJSON"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 832,
-      "type": "SetNode",
-      "pos": {
-        "0": 4470,
-        "1": -242
-      },
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 132,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "link": 1479
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_VAE",
-      "properties": {
-        "previousName": "VAE"
+        "Node name for S&R": "UpscaleModelLoader"
       },
       "widgets_values": [
-        "VAE"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 1345,
-      "type": "SetNode",
-      "pos": {
-        "0": 1644,
-        "1": 1723
-      },
-      "size": {
-        "0": 221.07913208007812,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 214,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "link": 2073
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_Out - processed input",
-      "properties": {
-        "previousName": "Out - processed input"
-      },
-      "widgets_values": [
-        "Out - processed input"
+        "4xFaceUpDAT.pth"
       ]
-    },
-    {
-      "id": 1346,
-      "type": "ImagePass",
-      "pos": {
-        "0": 1534,
-        "1": 1724
-      },
-      "size": {
-        "0": 210,
-        "1": 26
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 201,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 3210,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            2073
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImagePass"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 1551,
-      "type": "ShowText|pysssss",
-      "pos": {
-        "0": 750,
-        "1": 1063
-      },
-      "size": {
-        "0": 715.0927124023438,
-        "1": 181.68185424804688
-      },
-      "flags": {},
-      "order": 178,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 2375,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0,
-          "shape": 6
-        }
-      ],
-      "title": "Prompt Suggestion",
-      "properties": {
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "",
-        "a digital illustration in a highly detailed, semi-realistic style, the subject is a man with a light complexion and a muscular physique, he has a full beard and neatly trimmed beard, and his facial expression is neutral, he is wearing a blue hooded cloak with intricate, blue patterns, which appears to be made of fabric with a slight sheen, the cloak's hood is slightly open, revealing a glimpse of his shoulders, the man's face is covered by a large, blue, ornate hat with a golden, star-like design at the center, resembling a magic or magical realm, the background is a plain, off-white color, which makes the subject stand out prominently, the texture of the cloak and hat is smooth and polished, with a glossy finish that enhances the realism of the illustration, the overall composition is symmetrical, with the head facing slightly to the left, creating a sense of depth and mystery, the illustration is signed mikoto in the bottom right corner, indicating the artist's name"
-      ]
-    },
-    {
-      "id": 722,
-      "type": "ttN text",
-      "pos": {
-        "0": 749,
-        "1": 680
-      },
-      "size": {
-        "0": 720.005126953125,
-        "1": 153.86546325683594
-      },
-      "flags": {
-        "collapsed": false,
-        "pinned": true
-      },
-      "order": 108,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            1334
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "ttN text",
-        "ttNnodeVersion": "1.0.0"
-      },
-      "widgets_values": [
-        "a digital illustration in a highly detailed, semi-realistic style, the subject is a man with a light complexion and a muscular physique, he has a full beard and neatly trimmed beard, and his facial expression is neutral, he is wearing a blue hooded cloak with intricate, blue patterns, which appears to be made of fabric with a slight sheen, the cloak's hood is slightly open, revealing a glimpse of his shoulders, the man's face is covered by a large, blue, ornate hat with a golden, star-like design at the center, resembling a magic or magical realm, the background is a plain, off-white color, which makes the subject stand out prominently, the texture of the cloak and hat is smooth and polished, with a glossy finish that enhances the realism of the illustration, the overall composition is symmetrical, with the head facing slightly to the left, creating a sense of depth and mystery, the illustration is signed mikoto in the bottom right corner, indicating the artist's name"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
     },
     {
       "id": 1342,
       "type": "ImageResize+",
       "pos": {
-        "0": 1530,
-        "1": 1216
+        "0": 1520,
+        "1": 1190
       },
-      "size": {
-        "0": 317.18359375,
-        "1": 218
+      "size": [
+        310,
+        220
+      ],
+      "flags": {
+        "pinned": true
       },
-      "flags": {},
-      "order": 144,
+      "order": 164,
       "mode": 0,
       "inputs": [
         {
@@ -10725,17 +10523,18 @@
       "id": 1343,
       "type": "ImageCrop+",
       "pos": {
-        "0": 1528,
-        "1": 1480
+        "0": 1520,
+        "1": 1450
       },
-      "size": {
-        "0": 322.4339904785156,
-        "1": 194
-      },
+      "size": [
+        310,
+        190
+      ],
       "flags": {
-        "collapsed": false
+        "collapsed": false,
+        "pinned": true
       },
-      "order": 183,
+      "order": 192,
       "mode": 4,
       "inputs": [
         {
@@ -10776,6 +10575,209 @@
         "top-left",
         0,
         0
+      ]
+    },
+    {
+      "id": 1346,
+      "type": "ImagePass",
+      "pos": {
+        "0": 1520,
+        "1": 1680
+      },
+      "size": {
+        "0": 210,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": true
+      },
+      "order": 204,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 3210,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2073
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImagePass"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 1345,
+      "type": "SetNode",
+      "pos": {
+        "0": 1630,
+        "1": 1680
+      },
+      "size": {
+        "0": 221.07913208007812,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": true
+      },
+      "order": 219,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 2073
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_Out - processed input",
+      "properties": {
+        "previousName": "Out - processed input"
+      },
+      "widgets_values": [
+        "Out - processed input"
+      ]
+    },
+    {
+      "id": 1321,
+      "type": "SetNode",
+      "pos": {
+        "0": 1700,
+        "1": 820
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 166,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "link": 3213
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_mask",
+      "properties": {
+        "previousName": "mask"
+      },
+      "widgets_values": [
+        "mask"
+      ]
+    },
+    {
+      "id": 2214,
+      "type": "LoadImage",
+      "pos": {
+        "0": 1520,
+        "1": 450
+      },
+      "size": [
+        310,
+        380
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 106,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            3213
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "Mask",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-995728.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 1209,
+      "type": "LoadImage",
+      "pos": {
+        "0": 1520,
+        "1": 140
+      },
+      "size": [
+        310,
+        380
+      ],
+      "flags": {},
+      "order": 107,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2040
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_temp_csxfc_00005_.png [temp]",
+        "image"
       ]
     }
   ],
@@ -12269,14 +12271,6 @@
       "INT"
     ],
     [
-      2306,
-      1488,
-      0,
-      1090,
-      0,
-      "INT"
-    ],
-    [
       2313,
       1262,
       0,
@@ -12755,202 +12749,24 @@
       1321,
       0,
       "MASK"
+    ],
+    [
+      3214,
+      2217,
+      0,
+      1090,
+      0,
+      "INT"
     ]
   ],
   "groups": [
     {
-      "title": "img2img",
+      "title": "Depth Mask",
       "bounding": [
-        4100,
-        214,
-        1280,
-        564
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Inpainting",
-      "bounding": [
-        4099,
-        820,
-        1889,
-        761
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Settings",
-      "bounding": [
-        379,
-        1113,
-        330,
-        682
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Prompt Utility",
-      "bounding": [
-        740,
-        1013,
-        740,
-        530
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Ultimate Upscaler",
-      "bounding": [
-        4099,
-        1631,
-        2048,
-        658
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Input Processing",
-      "bounding": [
-        1501,
+        6091,
+        -859,
         835,
-        385,
-        921
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Sampler Params",
-      "bounding": [
-        378,
-        570,
-        334,
-        539
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "LoRAs",
-      "bounding": [
-        379,
-        250,
-        331,
-        315
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Detailer",
-      "bounding": [
-        4095,
-        2334,
-        2045,
-        667
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Output Selector",
-      "bounding": [
-        377,
-        88,
-        332,
-        158
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Image Load",
-      "bounding": [
-        1503,
-        85,
-        387,
-        748
-      ],
-      "font_size": 12,
-      "flags": {}
-    },
-    {
-      "title": "Main",
-      "bounding": [
-        736,
-        64,
-        742,
-        930
-      ],
-      "font_size": 12,
-      "flags": {
-        "pinned": true
-      }
-    },
-    {
-      "title": "2nd Pass",
-      "bounding": [
-        5794,
-        -37,
-        1084,
-        263
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Load models + text2image",
-      "bounding": [
-        4097,
-        -366,
-        1670,
-        545
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Save",
-      "bounding": [
-        4101,
-        -1158,
-        608,
-        266
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Noise Injection",
-      "bounding": [
-        5801,
-        -552,
-        1435,
-        494
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
-      "title": "Multi GPU",
-      "bounding": [
-        4366,
-        -851,
-        517,
-        434
+        289
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -12969,12 +12785,198 @@
       "flags": {}
     },
     {
-      "title": "Depth Mask",
+      "title": "Multi GPU",
       "bounding": [
-        6091,
-        -859,
-        835,
-        289
+        4366,
+        -851,
+        517,
+        434
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Noise Injection",
+      "bounding": [
+        5800,
+        -550,
+        1435,
+        494
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Save",
+      "bounding": [
+        4101,
+        -1158,
+        608,
+        266
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Load models + text2image",
+      "bounding": [
+        4097,
+        -366,
+        1670,
+        545
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "2nd Pass",
+      "bounding": [
+        5794,
+        -37,
+        1084,
+        263
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Main",
+      "bounding": [
+        740,
+        60,
+        740,
+        930
+      ],
+      "font_size": 12,
+      "flags": {
+        "pinned": true
+      }
+    },
+    {
+      "title": "Image Load",
+      "bounding": [
+        1510,
+        90,
+        330,
+        750
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Output Selector",
+      "bounding": [
+        380,
+        90,
+        330,
+        150
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Detailer",
+      "bounding": [
+        4095,
+        2334,
+        2045,
+        667
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "LoRAs",
+      "bounding": [
+        380,
+        240,
+        330,
+        300
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Sampler Params",
+      "bounding": [
+        380,
+        540,
+        330,
+        560
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Input Processing",
+      "bounding": [
+        1510,
+        840,
+        330,
+        850
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Ultimate Upscaler",
+      "bounding": [
+        4099,
+        1631,
+        2048,
+        658
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Prompt Utility",
+      "bounding": [
+        740,
+        990,
+        740,
+        530
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Settings",
+      "bounding": [
+        380,
+        1100,
+        330,
+        682
+      ],
+      "font_size": 12,
+      "flags": {}
+    },
+    {
+      "title": "Inpainting",
+      "bounding": [
+        4099,
+        820,
+        1889,
+        761
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "img2img",
+      "bounding": [
+        4100,
+        214,
+        1280,
+        564
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -12984,10 +12986,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7627768444385644,
+      "scale": 0.6934334949441425,
       "offset": [
-        314.2174959210498,
-        87.84446405783092
+        401.1407788594847,
+        164.39408710188465
       ]
     },
     "groupNodes": {}
