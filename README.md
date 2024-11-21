@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6ef432d1-aca7-4995-8905-e013a56afb0e)# ComfyUI Flux Continuum - Modular Interface
+# ComfyUI Flux Continuum - Modular Interface
 
 ![image](https://github.com/user-attachments/assets/c7d38628-4e0c-46f4-8458-06865d280cd3)
 
