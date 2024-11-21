@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-flux-continuum"
+description = "Set of custom nodes to use with the ComfyUI Flux Continuum: Modular Interface. NODES: Text Versions, Image64 Display, Tabs, Step Slider, Denoise Slider, Guidance Slider, Batch Slider, Max Shift Slider, ControlNet Slider"
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/robertvoy/ComfyUI-Flux-Continuum"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "robertvoy"
+DisplayName = "ComfyUI-Flux-Continuum"
+Icon = ""
