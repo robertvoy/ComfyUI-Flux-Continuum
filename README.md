@@ -34,7 +34,7 @@ Perfect for creators who want a consistent, streamlined experience across all im
 
 ## 🚀 Quick Start
 
-1. Download and import the workflow into ComfyUI
+1. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.3_release.json) and import the workflow into ComfyUI
 2. Install required custom nodes using the ComfyUI Manager
 3. Configure your models in the config panel (press `2` to access)
 4. Download any missing models
