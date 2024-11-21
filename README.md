@@ -1,4 +1,4 @@
-# ComfyUI Flux Continuum - Modular Interface
+![image](https://github.com/user-attachments/assets/6ef432d1-aca7-4995-8905-e013a56afb0e)# ComfyUI Flux Continuum - Modular Interface
 
 ![image](https://github.com/user-attachments/assets/c7d38628-4e0c-46f4-8458-06865d280cd3)
 
@@ -141,6 +141,7 @@ Shoutout to these custom node packs for making this workflow possible:
 ---
 ## 🔜 Coming Soon
 
+- Black Forest Labs tools: new ControlNets and IP Adapter 
 - Video tutorial on how to use the workflow
 - Video tutorial on how to add new modules
 - Multi GPU support
