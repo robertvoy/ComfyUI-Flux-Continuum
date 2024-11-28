@@ -11,6 +11,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "GuidanceSlider": "Guidance Slider",
     "GPUSlider": "GPU Slider",
     "BatchSlider": "Batch Slider",
+    "IPAdapterSlider": "IPAdapter Slider",
     "MaxShiftSlider": "Max Shift Slider",
     "ControlNetSlider": "ControlNet Slider",
     "SelectFromBatch": "Select From Batch",
@@ -23,6 +24,13 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SamplerParameterUnpacker": "Sampler Parameter Unpacker",
     "ImpactControlBridgeFix": "ImpactControlBridgeFix",
     "BooleanToEnabled": "Boolean To Enabled",
+    "OutputGetString": "OutputGetString",
+    "SplitVec3": "SplitVec3",
+    "SimpleTextTruncate": "Simple Text Truncate",
+    "ModelRouter": "Model Router",
+    "ImageBatchBoolean": "Image Batch Boolean",
+    "DrawTextConfig": "DrawTextConfig",
+    "ConfigurableDrawText": "ConfigurableDrawText"
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

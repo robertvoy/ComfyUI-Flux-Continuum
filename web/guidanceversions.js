@@ -10,16 +10,16 @@ const TAB_CONFIG = {
     textColor: "white",
     borderRadius: 4,
     spacing: 10,
-    offset: 16,
-    labels: ["1", "2", "3"], // 3 tabs
+    offset: 14,
+    labels: ["1", "2", "3"], // 3 preset tabs
     yPosition: 6
 };
 
 app.registerExtension({
-    name: "SamplerParameterPacker",
+    name: "TabbedGuidanceSlider",
     
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
-        if (nodeType.comfyClass !== "SamplerParameterPacker") return;
+        if (nodeType.comfyClass !== "GuidanceSlider") return;
         
         // Preserve original methods
         const originalOnNodeCreated = nodeType.prototype.onNodeCreated;
@@ -36,21 +36,15 @@ app.registerExtension({
             // Initialize tab state and content
             this.activeTab = 0;
             this.tabContents = TAB_CONFIG.labels.map(() => ({
-                sampler: this.widgets[0].value,
-                scheduler: this.widgets[1].value
+                value: this.widgets[0].value
             }));
             
-            // Store widget references
-            this.samplerWidget = this.widgets[0];
-            this.schedulerWidget = this.widgets[1];
+            // Store widget reference
+            this.valueWidget = this.widgets[0];
             
-            // Add change listeners to widgets
-            this.samplerWidget.callback = () => {
-                this.tabContents[this.activeTab].sampler = this.samplerWidget.value;
-            };
-
-            this.schedulerWidget.callback = () => {
-                this.tabContents[this.activeTab].scheduler = this.schedulerWidget.value;
+            // Add change listener to widget
+            this.valueWidget.callback = () => {
+                this.tabContents[this.activeTab].value = this.valueWidget.value;
             };
         };
         
@@ -96,18 +90,16 @@ app.registerExtension({
                     if (x >= tabX && x <= tabX + width) {
                         if (i === this.activeTab) return false;
                         
-                        // Save current widget values to current tab
+                        // Save current widget value to current tab
                         this.tabContents[this.activeTab] = {
-                            sampler: this.samplerWidget.value,
-                            scheduler: this.schedulerWidget.value
+                            value: this.valueWidget.value
                         };
                         
                         // Switch tab
                         this.activeTab = i;
                         
                         // Load content from new tab
-                        this.samplerWidget.value = this.tabContents[i].sampler;
-                        this.schedulerWidget.value = this.tabContents[i].scheduler;
+                        this.valueWidget.value = this.tabContents[i].value;
                         
                         this.setDirtyCanvas(true);
                         return true;
@@ -142,16 +134,14 @@ app.registerExtension({
                 // Ensure tabContents length matches number of tabs
                 this.tabContents = TAB_CONFIG.labels.map((_, i) => 
                     o.tabContents[i] || {
-                        sampler: this.samplerWidget.value,
-                        scheduler: this.schedulerWidget.value
+                        value: this.valueWidget.value
                     }
                 );
                 this.activeTab = o.activeTab >= 0 && o.activeTab < TAB_CONFIG.labels.length ? o.activeTab : 0;
                 
                 // Load the active tab's content
-                if (this.samplerWidget && this.schedulerWidget) {
-                    this.samplerWidget.value = this.tabContents[this.activeTab].sampler;
-                    this.schedulerWidget.value = this.tabContents[this.activeTab].scheduler;
+                if (this.valueWidget) {
+                    this.valueWidget.value = this.tabContents[this.activeTab].value;
                 }
             }
         };

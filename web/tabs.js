@@ -19,7 +19,8 @@ const TAB_STYLE = {
     fontSize: 9,
     normalColor: "#5a5a5a",
     textColor: "white",
-    borderRadius: 4
+    borderRadius: 4,
+    fontFamily: "'Segoe UI', Arial, sans-serif"
 };
 
 // Utility class for bounding box calculations
@@ -105,11 +106,12 @@ const handleNodeOrder = (node, toFront = true) => {
 };
 
 const drawTab = (ctx, x, y, text, width) => {
-    const { height, fontSize, normalColor, textColor, borderRadius } = TAB_STYLE;
+    const { height, fontSize, normalColor, textColor, borderRadius, fontFamily } = TAB_STYLE;
 
     ctx.save();
     ctx.fillStyle = normalColor;
 
+    // Draw tab background
     ctx.beginPath();
     ctx.moveTo(x + borderRadius, y);
     ctx.lineTo(x + width - borderRadius, y);
@@ -121,10 +123,14 @@ const drawTab = (ctx, x, y, text, width) => {
     ctx.closePath();
     ctx.fill();
 
+    // Text rendering with just the essential improvements
     ctx.fillStyle = textColor;
-    ctx.font = `${fontSize}px Arial`;
+    ctx.textRendering = 'optimizeLegibility';
+    ctx.imageSmoothingEnabled = true;
+    ctx.font = `${fontSize}px ${fontFamily}`;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
+    
     ctx.fillText(text, x + width / 2, y + height / 2);
     ctx.restore();
 };

@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-flux-continuum"
 description = "Set of custom nodes to use with the ComfyUI Flux Continuum: Modular Interface. NODES: Text Versions, Image64 Display, Tabs, Step Slider, Denoise Slider, Guidance Slider, Batch Slider, Max Shift Slider, ControlNet Slider"
-version = "1.3.0"
+version = "1.4.4"
 license = {file = "LICENSE"}
 
 [project.urls]

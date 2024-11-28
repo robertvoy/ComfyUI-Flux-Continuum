@@ -1,5 +1,13 @@
 import { app } from "../../../scripts/app.js";
 
+const originalAlert = window.alert;
+window.alert = (message) => {
+    if (message === "Error: Set node input undefined. Most likely you're missing custom nodes") {
+        return;
+    }
+    originalAlert(message);
+};
+
 // Configuration for nodes that should be forced to back
 const BACKGROUND_NODE_CONFIG = {
     nodes: {
