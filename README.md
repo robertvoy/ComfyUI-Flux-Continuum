@@ -1,8 +1,10 @@
 # ComfyUI Flux Continuum - Modular Interface
 
-![image](https://github.com/user-attachments/assets/c7d38628-4e0c-46f4-8458-06865d280cd3)
+![banner_2](https://github.com/user-attachments/assets/5681868a-002d-46a4-9fc2-7455af728821)
 
 > A modular workflow that brings order to the chaos of image generation pipelines.
+
+📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
 - **1.4.2:** Black Forest Labs tools update
@@ -45,10 +47,8 @@ ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful d
 
 ---
 
-## 🚀 Quick Start
-
-> This workflow is intended for intermediate and advanced users.
-
+## 🚀 Quick Start  
+📺 **New to Flux Continuum?** [Watch the tutorial first](https://www.youtube.com/watch?v=cjWuPcRZ1j0)  
 1. Clone repo to the custom nodes folder
 ```shell
 git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
