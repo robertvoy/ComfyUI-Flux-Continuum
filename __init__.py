@@ -27,7 +27,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "OutputGetString": "OutputGetString",
     "SplitVec3": "SplitVec3",
     "SimpleTextTruncate": "Simple Text Truncate",
-    "ModelRouter": "Model Router",
+    "FluxContinuumModelRouter": "FluxContinuumModelRouter",
     "ImageBatchBoolean": "Image Batch Boolean",
     "DrawTextConfig": "DrawTextConfig",
     "ConfigurableDrawText": "ConfigurableDrawText"
