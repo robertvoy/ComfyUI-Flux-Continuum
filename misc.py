@@ -561,8 +561,7 @@ class FluxContinuumModelRouter:
     RETURN_TYPES = ("MODEL",)
     FUNCTION = "route_model"
     CATEGORY = "Flux-Continuum/Utilities"
-    DESCRIPTION = ("For FLux Continuum Workflow only.\n",
-                    "Routes model selection based on conditional input for different tasks (fill, depth, canny, dev)")
+    DESCRIPTION = "For Flux Continuum workflow only. Routes model selection based on conditional input for different tasks (fill, depth, canny, dev)"
     def check_lazy_status(self, flux_fill, flux_depth, flux_canny, flux_dev, condition):
         condition = condition.lower().strip()
         needed = []
