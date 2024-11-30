@@ -550,11 +550,13 @@ class FluxContinuumModelRouter:
     def INPUT_TYPES(s):
         return {
             "required": {
+                "condition": ("STRING", {"default": ""})
+            },
+            "optional": {
                 "flux_fill": ("MODEL", {"lazy": True}),  # Lazy load for inpainting/outpainting
                 "flux_depth": ("MODEL", {"lazy": True}), # Lazy load for depth
                 "flux_canny": ("MODEL", {"lazy": True}), # Lazy load for canny
                 "flux_dev": ("MODEL", {"lazy": True}),   # Lazy load for default case
-                "condition": ("STRING", {"default": ""})
             }
         }
     
@@ -562,7 +564,8 @@ class FluxContinuumModelRouter:
     FUNCTION = "route_model"
     CATEGORY = "Flux-Continuum/Utilities"
     DESCRIPTION = "For Flux Continuum workflow only. Routes model selection based on conditional input for different tasks (fill, depth, canny, dev)"
-    def check_lazy_status(self, flux_fill, flux_depth, flux_canny, flux_dev, condition):
+
+    def check_lazy_status(self, condition, flux_fill=None, flux_depth=None, flux_canny=None, flux_dev=None):
         condition = condition.lower().strip()
         needed = []
         
@@ -582,7 +585,7 @@ class FluxContinuumModelRouter:
                 
         return needed
 
-    def route_model(self, flux_fill, flux_depth, flux_canny, flux_dev, condition):
+    def route_model(self, condition, flux_fill=None, flux_depth=None, flux_canny=None, flux_dev=None):
         condition = condition.lower().strip()
         
         if condition in ["inpainting", "outpainting"]:
