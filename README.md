@@ -7,6 +7,8 @@
 📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
+- **Flux Continuum Light 1.0.0:** Light version of the workflow with all the basic functions that requires only the FLUX.1-dev model. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.0.0_release.json)
+- **1.4.5:** Bug fixes
 - **1.4.2:** Black Forest Labs tools update
   - Black Forest Labs tools: Integrated the new Redux, Depth, Canny, Fill and IP Adapter models
   - Preview Panel: Preview all your image inputs and masks at a glance. Great for working with multiple IP Adapters
@@ -53,7 +55,8 @@ ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful d
 ```shell
 git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 ```
-2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.4.4_release.json) and import the workflow into ComfyUI
+2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.4.5_release.json) and import the workflow into ComfyUI
+> Flux Continuum Light is [available here.](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.0.0_release.json) (only FLUX.1-dev model is required)
 2. Install missing custom nodes using the ComfyUI Manager
 3. Configure your models in the config panel (press `2` to access)
 4. Download any missing [models](https://comfyanonymous.github.io/ComfyUI_examples/flux/)
