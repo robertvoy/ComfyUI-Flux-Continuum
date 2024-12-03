@@ -40,7 +40,7 @@ ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful d
   - Efficiently handles resource allocation
 
 - **Universal Model Integration**
-  - LoRAs and IP Adapterts work across all output modules
+  - LoRAs and IP Adapters work across all output modules
   - Seamless Black Forest Labs model support
 
 - **Modular Architecture**
