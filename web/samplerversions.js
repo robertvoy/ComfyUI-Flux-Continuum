@@ -18,17 +18,19 @@ const TAB_CONFIG = {
 app.registerExtension({
     name: "SamplerParameterPacker",
     
-    async beforeRegisterNodeDef(nodeType, nodeData, app) {
-        if (nodeType.comfyClass !== "SamplerParameterPacker") return;
+    // Modern API uses nodeCreated instead of beforeRegisterNodeDef
+    nodeCreated(node) {
+        // Only apply to SamplerParameterPacker nodes
+        if (node.type !== "SamplerParameterPacker" && node.comfyClass !== "SamplerParameterPacker") return;
         
         // Preserve original methods
-        const originalOnNodeCreated = nodeType.prototype.onNodeCreated;
-        const originalOnDrawForeground = nodeType.prototype.onDrawForeground;
-        const originalGetBounding = nodeType.prototype.getBounding;
-        const originalOnSerialize = nodeType.prototype.onSerialize;
-        const originalOnConfigure = nodeType.prototype.onConfigure;
+        const originalOnNodeCreated = node.onNodeCreated;
+        const originalOnDrawForeground = node.onDrawForeground;
+        const originalGetBounding = node.getBounding;
+        const originalOnSerialize = node.onSerialize;
+        const originalOnConfigure = node.onConfigure;
 
-        nodeType.prototype.onNodeCreated = function() {
+        node.onNodeCreated = function() {
             if (originalOnNodeCreated) {
                 originalOnNodeCreated.apply(this, arguments);
             }
@@ -54,7 +56,7 @@ app.registerExtension({
             };
         };
         
-        nodeType.prototype.onDrawForeground = function(ctx) {
+        node.onDrawForeground = function(ctx) {
             if (originalOnDrawForeground) {
                 originalOnDrawForeground.apply(this, arguments);
             }
@@ -85,7 +87,7 @@ app.registerExtension({
             ctx.restore();
         };
         
-        nodeType.prototype.onMouseDown = function(event, local_pos, graphCanvas) {
+        node.onMouseDown = function(event, local_pos, graphCanvas) {
             const [x, y] = local_pos;
             const { yPosition, height, width, spacing, offset, labels } = TAB_CONFIG;
             
@@ -118,7 +120,7 @@ app.registerExtension({
             return false;
         };
         
-        nodeType.prototype.getBounding = function() {
+        node.getBounding = function() {
             const bounds = originalGetBounding ? originalGetBounding.apply(this, arguments) : [0, 0, 200, 100];
             const tabsHeight = Math.abs(TAB_CONFIG.yPosition) + TAB_CONFIG.height;
             bounds[1] -= tabsHeight; // Extend top boundary to include tabs
@@ -126,7 +128,7 @@ app.registerExtension({
             return bounds;
         };
 
-        nodeType.prototype.onSerialize = function(o) {
+        node.onSerialize = function(o) {
             if (originalOnSerialize) {
                 originalOnSerialize.apply(this, arguments);
             }
@@ -134,7 +136,7 @@ app.registerExtension({
             o.activeTab = this.activeTab;
         };
 
-        nodeType.prototype.onConfigure = function(o) {
+        node.onConfigure = function(o) {
             if (originalOnConfigure) {
                 originalOnConfigure.apply(this, arguments);
             }

@@ -47,18 +47,20 @@ function debounce(func, wait) {
 app.registerExtension({
     name: "TextVersions",
     
-    async beforeRegisterNodeDef(nodeType, nodeData, app) {
-        if (nodeType.comfyClass !== "TextVersions") return;
-
+    // Modern API uses nodeCreated instead of beforeRegisterNodeDef
+    nodeCreated(node) {
+        // Only apply to TextVersions nodes
+        if (node.type !== "TextVersions" && node.comfyClass !== "TextVersions") return;
+        
         // Store original methods
-        const onNodeCreated = nodeType.prototype.onNodeCreated;
-        const onDrawBackground = nodeType.prototype.onDrawBackground;
-        const getBounding = nodeType.prototype.getBounding;
-        const onSerialize = nodeType.prototype.onSerialize;
-        const onConfigure = nodeType.prototype.onConfigure;
+        const onNodeCreated = node.onNodeCreated;
+        const onDrawBackground = node.onDrawBackground;
+        const getBounding = node.getBounding;
+        const onSerialize = node.onSerialize;
+        const onConfigure = node.onConfigure;
 
-        // Add onNodeCreated to the node type
-        nodeType.prototype.onNodeCreated = function() {
+        // Add onNodeCreated to the node
+        node.onNodeCreated = function() {
             if (onNodeCreated) {
                 onNodeCreated.apply(this, arguments);
             }
@@ -97,7 +99,7 @@ app.registerExtension({
             }
         };
 
-        nodeType.prototype.onPropertyChanged = function(name, value) {
+        node.onPropertyChanged = function(name, value) {
             if (name === "versionAmount") {
                 const newValue = Math.max(CONFIG.MIN_VERSION_AMOUNT, 
                     Math.min(CONFIG.MAX_VERSION_AMOUNT, Math.floor(value)));
@@ -113,7 +115,7 @@ app.registerExtension({
             }
         };
 
-        nodeType.prototype.onDrawBackground = function(ctx) {
+        node.onDrawBackground = function(ctx) {
             if (onDrawBackground) {
                 onDrawBackground.apply(this, arguments);
             }
@@ -151,7 +153,7 @@ app.registerExtension({
             ctx.restore();
         };
         
-        nodeType.prototype.onMouseDown = function(event, local_pos, graphCanvas) {
+        node.onMouseDown = function(event, local_pos, graphCanvas) {
             const [x, y] = local_pos;
             const { yPosition, height, width, spacing, offset, labels } = this.tabConfig;
             
@@ -180,7 +182,7 @@ app.registerExtension({
             return false;
         };
         
-        nodeType.prototype.getBounding = function() {
+        node.getBounding = function() {
             const bounds = getBounding?.apply(this, arguments) || new Float32Array(4);
             const tabsHeight = Math.abs(this.tabConfig.yPosition) + this.tabConfig.height;
             bounds[1] -= tabsHeight;
@@ -188,7 +190,7 @@ app.registerExtension({
             return bounds;
         };
 
-        nodeType.prototype.onSerialize = function(o) {
+        node.onSerialize = function(o) {
             if (onSerialize) {
                 onSerialize.apply(this, arguments);
             }
@@ -196,7 +198,7 @@ app.registerExtension({
             o.activeTab = this.activeTab;
         };
 
-        nodeType.prototype.onConfigure = function(o) {
+        node.onConfigure = function(o) {
             if (onConfigure) {
                 onConfigure.apply(this, arguments);
             }

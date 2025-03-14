@@ -37,15 +37,13 @@ class StepSlider:
                 "value": ("FLOAT", { "display": "slider", "default": 25.0, "min": 0.0, "max": 50.0, "step": 1.0 }),
             },
         }
-
     RETURN_TYPES = ("INT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
     DESCRIPTION = "Provides a slider for adjusting sampling steps with range 0-50"
-
     def execute(self, value):
-        # Return the integer value directly
-        return (int(value), )
+        # Use round() instead of int() to ensure proper integer conversion
+        return (int(round(value)), )
 
 class BatchSlider:
     @classmethod
@@ -55,15 +53,13 @@ class BatchSlider:
                 "value": ("FLOAT", { "display": "slider", "default": 1.0, "min": 1.0, "max": 10.0, "step": 1.0 }),
             },
         }
-
     RETURN_TYPES = ("INT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
     DESCRIPTION = "Provides a slider for controlling batch size with range 1-10"
-
     def execute(self, value):
-        # Return the integer value directly
-        return (int(value), )
+        # Use round() instead of int() to ensure proper integer conversion
+        return (int(round(value)), )
 
 class GPUSlider:
     @classmethod
@@ -73,15 +69,13 @@ class GPUSlider:
                 "value": ("FLOAT", { "display": "slider", "default": 1.0, "min": 1.0, "max": 4.0, "step": 1.0 }),
             },
         }
-
     RETURN_TYPES = ("INT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
     DESCRIPTION = "Provides a slider for selecting number of GPUs with range 1-4"
-
     def execute(self, value):
-        # Return the integer value directly
-        return (int(value), )
+        # Use round() instead of int() to ensure proper integer conversion
+        return (int(round(value)), )
 
 class SelectFromBatch:
     @classmethod
@@ -91,15 +85,13 @@ class SelectFromBatch:
                 "value": ("FLOAT", { "display": "slider", "default": 0.0, "min": 0.0, "max": 24.0, "step": 1.0 }),
             },
         }
-
     RETURN_TYPES = ("INT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
     DESCRIPTION = "Provides a slider for selecting specific images from a batch with range 0-24"
-
     def execute(self, value):
-        # Return the integer value directly
-        return (int(value), )
+        # Use round() instead of int() to ensure proper integer conversion
+        return (int(round(value)), )
 
 class GuidanceSlider:
     @classmethod
