@@ -61,6 +61,21 @@ class BatchSlider:
         # Use round() instead of int() to ensure proper integer conversion
         return (int(round(value)), )
 
+class ResolutionMultiplySlider:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "value": ("FLOAT", { "display": "slider", "default": 1.0, "min": 1.0, "max": 10.0, "step": 0.1 }),
+            },
+        }
+    RETURN_TYPES = ("FLOAT", )
+    FUNCTION = "execute"
+    CATEGORY = "Flux-Continuum/Sliders"
+    DESCRIPTION = "Provides a slider for controlling resolution multiplication for upscaling, with range 1-10"
+    def execute(self, value):
+        return (value, )
+
 class GPUSlider:
     @classmethod
     def INPUT_TYPES(s):
@@ -149,6 +164,25 @@ class ControlNetSlider:
         # Return the three values as a VEC3
         return ((Strength, Start, End), )
 
+class CannySlider:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "Low_Threshold": ("FLOAT", { "display": "slider", "default": 0.40, "min": 0.1, "max": 0.99, "step": 0.01 }),
+                "High_Threshold": ("FLOAT", { "display": "slider", "default": 0.80, "min": 0.1, "max": 0.99, "step": 0.01 })
+            },
+        }
+
+    RETURN_TYPES = ("VEC2", )
+    FUNCTION = "execute"
+    CATEGORY = "Flux-Continuum/Sliders"
+    DESCRIPTION = "Provides two sliders for canny preprocessor parameters"
+
+    def execute(self, Low_Threshold, High_Threshold):
+        # Return the two values as a VEC2
+        return ((Low_Threshold, High_Threshold), )
+
 class IPAdapterSlider:
     @classmethod
     def INPUT_TYPES(s):
@@ -217,6 +251,22 @@ class LatentPass:
     def execute(self, latent):
         # Simply pass through the latent data
         return (latent, )
+
+class IntPass:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "INT": ("INT",),
+            },
+        }
+    RETURN_TYPES = ("INT", )
+    FUNCTION = "execute"
+    CATEGORY = "Flux-Continuum/Utilities"
+    
+    def execute(self, INT):
+        # Simply pass through an integer
+        return (INT, )
         
 class ResolutionPicker:
     @classmethod
@@ -491,9 +541,11 @@ class OutputGetString:
 
 # Type definition for Vec3
 Vec3 = Tuple[float, float, float]
+Vec2 = Tuple[float, float]
 
 # Zero vector constant
 VEC3_ZERO = (0.0, 0.0, 0.0)
+VEC2_ZERO = (0.0, 0.0)
 
 class SplitVec3:
     @classmethod
@@ -507,6 +559,17 @@ class SplitVec3:
 
     def op(self, a: Vec3) -> tuple[float, float, float]:
         return (a[0], a[1], a[2])
+
+class SplitVec2:
+    @classmethod
+    def INPUT_TYPES(cls) -> Mapping[str, Any]:
+        return {"required": {"a": ("VEC2", {"default": (0.0, 0.0)})}}
+    RETURN_TYPES = ("FLOAT", "FLOAT")
+    FUNCTION = "op"
+    CATEGORY = "Flux-Continuum/Utilities"
+    DESCRIPTION = "Splits a vector2 input into its two individual float components"
+    def op(self, a) -> tuple[float, float]:
+        return (a[0], a[1])
 
 class SimpleTextTruncate:
     def __init__(self):
@@ -590,7 +653,6 @@ class FluxContinuumModelRouter:
             print(f"ModelRouter: Condition '{condition}' matched - Selected flux_canny model")
             return (flux_canny,)
         else:
-            print(f"ModelRouter: Condition '{condition}' didn't match any specific case - Selected flux_dev model")
             return (flux_dev,)
 
 class ImageBatchBoolean:
@@ -778,18 +840,22 @@ MISC_CLASS_MAPPINGS = {
     "MaxShiftSlider": MaxShiftSlider,
     "ControlNetSlider": ControlNetSlider,
     "IPAdapterSlider": IPAdapterSlider,
+    "CannySlider": CannySlider,
     "SelectFromBatch": SelectFromBatch,
     "GPUSlider": GPUSlider,
     "SEGSPass": SEGSPass,
+    "IntPass": IntPass,
     "PipePass": PipePass,
     "LatentPass": LatentPass,
     "ResolutionPicker": ResolutionPicker,
+    "ResolutionMultiplySlider": ResolutionMultiplySlider,
     "SamplerParameterPacker": SamplerParameterPacker,
     "SamplerParameterUnpacker": SamplerParameterUnpacker,
     "TextVersions": TextVersions,
     "ImpactControlBridgeFix": ImpactControlBridgeFix,
     "BooleanToEnabled": BooleanToEnabled,
     "OutputGetString": OutputGetString,
+    "SplitVec2": SplitVec2,
     "SplitVec3": SplitVec3,
     "SimpleTextTruncate": SimpleTextTruncate,
     "FluxContinuumModelRouter": FluxContinuumModelRouter,
