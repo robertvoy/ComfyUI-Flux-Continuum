@@ -7,6 +7,12 @@
 📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
+- **1.6.4:** ControlNet Union Pro v2 Update
+  - ControlNet Union Pro v2: Integrated the new Depth, Canny, OpenPose ControlNets
+  - New canny preprocessor control
+  - Removed the inputs preview tab
+  - Better upscaling controls
+  - New Redux (IPAdapter) implementation
 - **Flux Continuum Light 1.0.0:**
   - Light version of the workflow with all the basic functions that requires only the FLUX.1-dev model. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%20Light%201.0.0_release.json) 
 - **1.4.5:** Bug fixes
@@ -40,7 +46,7 @@ ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful d
   - Efficiently handles resource allocation
 
 - **Universal Model Integration**
-  - LoRAs and IP Adapters work across all output modules
+  - LoRAs, ControlNets and IP Adapters work across all output modules
   - Seamless Black Forest Labs model support
 
 - **Modular Architecture**
@@ -56,11 +62,11 @@ ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful d
 ```shell
 git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 ```
-2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.4.5_release.json) and import the workflow into ComfyUI
+2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.6.4_release.json) and import the workflow into ComfyUI
 > Flux Continuum Light is [available here.](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%20Light%201.0.0_release.json) (only FLUX.1-dev model is required)
 2. Install missing custom nodes using the ComfyUI Manager
 3. Configure your models in the config panel (press `2` to access)
-4. Download any missing [models](https://comfyanonymous.github.io/ComfyUI_examples/flux/)
+4. Download any missing [FLUX models](https://comfyanonymous.github.io/ComfyUI_examples/flux/) and [ControlNet Union Pro v2](https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0)
 5. Return to the main interface (press `1`)
 6. Select `txt2img` from the output selector (top left corner)
 7. Run the workflow to generate your first image
