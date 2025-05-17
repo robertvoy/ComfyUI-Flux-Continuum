@@ -7,7 +7,7 @@
 📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
-- **1.6.4:** ControlNet Union Pro v2 Update
+- **1.6.4:** ControlNet Union Pro v2 Update 📺 [Watch Video Update](https://www.youtube.com/watch?v=oh1P_4d9_HI)
   - ControlNet Union Pro v2: Integrated the new Depth, Canny, OpenPose ControlNets
   - New canny preprocessor control
   - Removed the inputs preview tab
