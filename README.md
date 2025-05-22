@@ -10,7 +10,7 @@
 - **1.6.4:** ControlNet Union Pro v2 Update 📺 [Watch Video Update](https://www.youtube.com/watch?v=oh1P_4d9_HI)
   - ControlNet Union Pro v2: Integrated the new Depth, Canny, OpenPose ControlNets
   - New canny preprocessor control
-  - Removed the inputs preview tab
+  - Removed the input preview tab
   - Better upscaling controls
   - New Redux (IPAdapter) implementation
 - **Flux Continuum Light 1.0.0:**
@@ -27,10 +27,10 @@
 
 ## Overview
 
-ComfyUI Flux Continuum revolutionizes workflow management through a thoughtful dual-interface design:
+ComfyUI Flux Continuum revolutionises workflow management through a thoughtful dual-interface design:
 
 - **Front-end**: A consistent control interface shared across all modules
-- **Back-end**: Powerful, modular architecture for customization and experimentation
+- **Back-end**: Powerful, modular architecture for customisation and experimentation
 
 ## ✨ Core Features
 
@@ -88,7 +88,8 @@ git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 | **canny** | Use the new Black Forest Labs canny model to control your generation with an input image and a canny preprocessor |
 | **depth** | Same as above but with the depth model |
 | **detailer** | Focused refinement using mask selection. Use the `Img Mask` tab to create/load mask |
-| **ultimate upscaler** | Advanced upscaling. Use Upscale Model picker, Denoise slider, and Resolution Multiple slider 📺 [Watch Upscaling Tutorial](https://www.youtube.com/watch?v=TmF3JK_1AAs) |
+| **ultimate upscaler** | Advanced upscaling. Use Upscale Model picker, Denoise slider, and Resolution Multiple slider
+📺 [Watch Upscaling Tutorial](https://www.youtube.com/watch?v=TmF3JK_1AAs) |
 | **upscaler** | Simple model-based upscaling. Choose model and adjust the Resolution Multiple slider for size |
 
 ### Utility Modules
@@ -138,7 +139,7 @@ git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 
 - **Sampler Parameter Packer**: Consolidates sampler settings with tabbed interface
 - **Sampler Parameter Unpacker**: Extracts packed parameters for workflow integration
-- **Batch Boolean**: Smart batch processing control. Adds the second input image to the batch only if conditon is met
+- **Batch Boolean**: Smart batch processing control. Adds the second input image to the batch only if condition is met
 - **Flux Continuum Model Router**: Intelligent model selection and routing. Designed specifically for this workflow
 - **Configurable Draw Text**: Takes an input from a Draw Text Config node with text style settings and renders text on top of an image
 
