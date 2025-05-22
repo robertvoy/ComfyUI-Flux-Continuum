@@ -88,17 +88,17 @@ git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 | **canny** | Use the new Black Forest Labs canny model to control your generation with an input image and a canny preprocessor |
 | **depth** | Same as above but with the depth model |
 | **detailer** | Focused refinement using mask selection. Use the `Img Mask` tab to create/load mask |
-| **ultimate upscaler** | Advanced upscaling. Use Upscale Model picker, Denoise slider, and Resolution Multiple slider |
+| **ultimate upscaler** | Advanced upscaling. Use Upscale Model picker, Denoise slider, and Resolution Multiple slider 📺 [Watch Upscaling Tutorial](https://www.youtube.com/watch?v=TmF3JK_1AAs) |
 | **upscaler** | Simple model-based upscaling. Choose model and adjust the Resolution Multiple slider for size |
-| **face swap** | Replace a face in your Img Load node with a face from the IP3/Face load image node. Press `3` on the keyboard to access settings. |
 
 ### Utility Modules
 
 | Module | Description |
 |--------|-------------|
 | **imgload prep** | Preview processed images after crop/sharpen/resize/padding |
-| **canny preprocessor** | Preview the preprocessor outputs for canny. Ue the Canny tab to adjust your settings. Run the workflow to see the changes. |
-| **depth preprocessor** | Same as above but for depth. Control the depth generation with the CC tab. |
+| **preprocessor canny** | Preview the preprocessor outputs for canny. Ue the Canny tab to adjust your settings. Run the workflow to see the changes. |
+| **preprocessor depth** | Same as above but for depth. |
+| **preprocessor openpose** | Same as above but for OpenPose. |
 
 ---
 ## 🔧 Custom Nodes
