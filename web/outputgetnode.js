@@ -50,7 +50,7 @@ function createCachedFunction(fn) {
 }
 
 app.registerExtension({
-    name: CONFIG.NODE.name,
+    name: "FluxContinuum.OutputGet",
     registerCustomNodes() {
         class OutputGetNode extends LGraphNode {
             static instance = null;
@@ -312,7 +312,7 @@ app.registerExtension({
 });
 
 app.registerExtension({
-  name: "OutputGetString",
+  name: "FluxContinuum.OutputGetString",
   async beforeRegisterNodeDef(nodeType, nodeData) {
     if (nodeData.name !== "OutputGetString") {
       return;
@@ -497,7 +497,7 @@ LGraphCanvas.prototype.drawNode = function(node, ctx) {
 };
 
 app.registerExtension({
-    name: "OutputTextDisplay",
+    name: "FluxContinuum.OutputTextDisplay",
     registerCustomNodes() {
         LiteGraph.registerNodeType(
             "OutputTextDisplay",

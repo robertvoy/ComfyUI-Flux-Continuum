@@ -24,7 +24,9 @@ class DenoiseSlider:
     RETURN_TYPES = ("FLOAT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides a slider for controlling denoising strength with range 0.0-1.0"
+    DESCRIPTION = """Control the **denoising strength** for img2img operations, including: inpainting, ultimate upscaler and detailer.
+    - A value of **1.0** means a completely new image.
+    - A value of **0.0** means no change to the latent image."""
 
     def execute(self, value):
         return (value, )
@@ -40,7 +42,7 @@ class StepSlider:
     RETURN_TYPES = ("INT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides a slider for adjusting sampling steps with range 0-50"
+    DESCRIPTION = "Set the number of **sampling steps**. Higher values can increase detail but take longer to process."
     def execute(self, value):
         # Use round() instead of int() to ensure proper integer conversion
         return (int(round(value)), )
@@ -120,7 +122,7 @@ class GuidanceSlider:
     RETURN_TYPES = ("FLOAT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides a slider for controlling classifier-free guidance scale with range -1.0 to 30.0"
+    DESCRIPTION = "Higher values make the output adhere more strictly to the prompt. Select between different presets for convenience. NOTE: FLUX Continuum workflow automatically sets your guidance to 30 when you're doing inpainting, outpainting, canny, or depth operations."
 
     def execute(self, value):
         # Return the float value directly
@@ -138,7 +140,7 @@ class MaxShiftSlider:
     RETURN_TYPES = ("FLOAT", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides a slider for controlling maximum pixel shift with range 0.0-4.0"
+    DESCRIPTION = "Control the **maximum pixel shift**, often used to introduce variation."
 
     def execute(self, value):
         # Return the float value directly
@@ -158,7 +160,9 @@ class ControlNetSlider:
     RETURN_TYPES = ("VEC3", )
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides three sliders for ControlNet parameters: Strength, Start, and End percentages"
+    DESCRIPTION = """- **Strength**: The overall influence of the ControlNet.
+- **Start**: The step at which the ControlNet begins to apply (as a percentage).
+- **End**: The step at which the ControlNet stops applying (as a percentage)."""
 
     def execute(self, Strength, Start, End):
         # Return the three values as a VEC3
@@ -197,7 +201,7 @@ class IPAdapterSlider:
     RETURN_TYPES = ("VEC3",)
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Sliders"
-    DESCRIPTION = "Provides three sliders for controlling multiple IP-Adapter strengths"
+    DESCRIPTION = "Control the strength of up to three different Redux inputs simultaneously."
 
     def execute(self, IP1, IP2, IP3):
         # Return the three values as a VEC3
@@ -278,7 +282,7 @@ class ResolutionPicker:
     RETURN_NAMES = ("resolution",)
     FUNCTION = "execute"
     CATEGORY = "Flux-Continuum/Utilities"
-    DESCRIPTION = "Provides a dropdown menu for selecting from preset image resolutions with aspect ratios"
+    DESCRIPTION = "Provides a convenient dropdown menu to select from a list of common, pre-calculated image **resolutions** and their aspect ratios. Perfect for FLUX."
 
     def execute(self, resolution):
         return (resolution,)
@@ -655,6 +659,74 @@ class FluxContinuumModelRouter:
         else:
             return (flux_dev,)
 
+class ConfigurableModelRouter:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                # This will be a text box widget on the node for manual input
+                "condition": ("STRING", {"multiline": False, "default": "default"}),
+                
+                # The JSON config is also a widget on the node
+                "routing_config": ("STRING", {
+                    "multiline": True,
+                    "default": '{\n  "default": 1,\n  "inpainting": 2,\n  "depth": 3,\n  "canny": 4\n}'
+                }),
+            },
+            "optional": {
+                "model_1": ("MODEL", {"lazy": True}),
+                "model_2": ("MODEL", {"lazy": True}),
+                "model_3": ("MODEL", {"lazy": True}),
+                "model_4": ("MODEL", {"lazy": True}),
+                "model_5": ("MODEL", {"lazy": True}),
+            }
+        }
+
+    RETURN_TYPES = ("MODEL",)
+    FUNCTION = "route_model"
+    CATEGORY = "Flux-Continuum/Utilities"
+    DESCRIPTION = """
+A dynamic model router that selects one of its inputs based on a configurable JSON mapping.
+How to Use:
+1. **Configure Logic:** Edit the `routing_config` JSON to map condition strings (e.g., `"inpainting"`) to an input index (e.g., `2`).
+2. The `"default"` key is used if no other condition matches.
+"""
+
+    # It's an instance method, so it can correctly read the widget values.
+    def check_lazy_status(self, condition, routing_config, **kwargs):
+        needed = []
+        try:
+            config = json.loads(routing_config)
+            
+            # Use the values from the widgets to find the target index
+            target_index = config.get(condition.strip().lower(), config.get("default", 1))
+            
+            # Construct the name of the model input we need to load
+            model_key = f"model_{target_index}"
+
+            # If the required model hasn't been loaded yet, request it by name
+            if kwargs.get(model_key) is None:
+                needed.append(model_key)
+        except:
+            # If the JSON is invalid, do nothing.
+            pass
+
+        print(f"[Model Router Check] Condition: '{condition}', Needing to load: {needed}")
+        return needed
+
+    def route_model(self, condition, routing_config, **kwargs):
+        # This logic runs after the needed model has been loaded.
+        config = json.loads(routing_config)
+        target_index = config.get(condition.strip().lower(), config.get("default", 1))
+        model_key = f"model_{target_index}"
+
+        # Check that the model exists and is connected
+        if model_key not in kwargs or kwargs.get(model_key) is None:
+            raise ValueError(f"Input '{model_key}' is required for condition '{condition}' but is not connected or loaded.")
+        
+        print(f"Model Router: Successfully routed to '{model_key}'")
+        return (kwargs[model_key],)
+        
 class ImageBatchBoolean:
     @classmethod
     def INPUT_TYPES(s):
@@ -859,6 +931,7 @@ MISC_CLASS_MAPPINGS = {
     "SplitVec3": SplitVec3,
     "SimpleTextTruncate": SimpleTextTruncate,
     "FluxContinuumModelRouter": FluxContinuumModelRouter,
+    "ConfigurableModelRouter": ConfigurableModelRouter,
     "ImageBatchBoolean": ImageBatchBoolean,
     "DrawTextConfig": DrawTextConfig,
     "ConfigurableDrawText": ConfigurableDrawText

@@ -1,7 +1,7 @@
 import { app } from "../../scripts/app.js";
 
 app.registerExtension({
-    name: "Comfy.Impact",
+    name: "FluxContinuum.ImpactControlBridgeFix",
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if(nodeData.name == "ImpactControlBridge") {
             const onConnectionsChange = nodeType.prototype.onConnectionsChange;

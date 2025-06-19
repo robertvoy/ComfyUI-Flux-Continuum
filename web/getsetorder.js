@@ -18,7 +18,7 @@ const BACKGROUND_NODE_CONFIG = {
 };
 
 app.registerExtension({
-    name: "GetSetNodeOrdering",
+    name: "FluxContinuum.GetSetNodeOrdering",
     async setup() {
         const originalLoadGraphData = app.loadGraphData;
         app.loadGraphData = function(graph_data) {

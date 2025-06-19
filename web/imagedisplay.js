@@ -149,7 +149,7 @@ LGraphCanvas.prototype.drawNode = function(node, ctx) {
 };
 
 app.registerExtension({
-   name: "ImageDisplay",
+   name: "FluxContinuum.ImageDisplay",
    async beforeRegisterNodeDef(nodeType, nodeData, app) {
        if (nodeData.name === "ImageDisplay") {
            nodeType.prototype.execute = () => {}; 

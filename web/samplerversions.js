@@ -16,9 +16,7 @@ const TAB_CONFIG = {
 };
 
 app.registerExtension({
-    name: "SamplerParameterPacker",
-    
-    // Modern API uses nodeCreated instead of beforeRegisterNodeDef
+    name: "FluxContinuum.SamplerParameterPacker",
     nodeCreated(node) {
         // Only apply to SamplerParameterPacker nodes
         if (node.type !== "SamplerParameterPacker" && node.comfyClass !== "SamplerParameterPacker") return;
@@ -29,6 +27,7 @@ app.registerExtension({
         const originalGetBounding = node.getBounding;
         const originalOnSerialize = node.onSerialize;
         const originalOnConfigure = node.onConfigure;
+        const originalOnMouseDown = node.onMouseDown; // IMPORTANT: Store the original onMouseDown
 
         node.onNodeCreated = function() {
             if (originalOnNodeCreated) {
@@ -115,6 +114,11 @@ app.registerExtension({
                         return true;
                     }
                 }
+            }
+            
+            // IMPORTANT: Call the original onMouseDown if we didn't handle the click
+            if (originalOnMouseDown) {
+                return originalOnMouseDown.apply(this, arguments);
             }
             
             return false;

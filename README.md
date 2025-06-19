@@ -7,23 +7,38 @@
 📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
+- **1.7.0:** Enhanced workflow and usability update
+  - **Image Transfer Shortcut**: Use `Ctrl+Shift+C` to copy images from Img Preview to Img Load (customizable in Settings > Keybinding > Image Transfer)
+  - **Configurable Model Router**: Dynamic model selection with customizable JSON mapping for flexible workflows
+  - **Hint System**: Interactive hint nodes provide contextual help throughout the workflow
+  - **Crop & Stitch**: Enhanced inpainting/outpainting with automatic crop and stitch functionality
+  - **Smart Guidance**: Automatic guidance value of 30 for inpainting, outpainting, canny, and depth operations
+  - **TeaCache Integration**: Optional speed boost for all outputs (trades some quality for performance)
+  - **Improved Preprocessor Preview Logic**: CN Input is used for previewing when ControlNet strength > 0, otherwise uses Img Load
+  - **Workflow Reorganization**: Modules reordered for more logical flow
+  - **Redux Naming**: IP Adapter renamed to Redux for consistency with BFL terminology
+
+<details>
+<summary><b>📋 Older Changelog</b> (Click to expand)</summary>
+
 - **1.6.4:** ControlNet Union Pro v2 Update 📺 [Watch Video Update](https://www.youtube.com/watch?v=oh1P_4d9_HI)
   - ControlNet Union Pro v2: Integrated the new Depth, Canny, OpenPose ControlNets
   - New canny preprocessor control
   - Removed the input preview tab
   - Better upscaling controls
   - New Redux (IPAdapter) implementation
+
 - **Flux Continuum Light 1.0.0:**
   - Light version of the workflow with all the basic functions that requires only the FLUX.1-dev model. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%20Light%201.0.0_release.json) 
-- **1.4.5:** Bug fixes
+
 - **1.4.2:** Black Forest Labs tools update
-  - Black Forest Labs tools: Integrated the new Redux, Depth, Canny, Fill and IP Adapter models
-  - Preview Panel: Preview all your image inputs and masks at a glance. Great for working with multiple IP Adapters
-  - Mask Feather Control: Feather the mask using one control on inpainting, outpainting and detailer
+  - Black Forest Labs tools: Integrated the new Redux, Depth, Canny, Fill models
+  - Preview Panel: Preview all your image inputs and masks at a glance
+  - Mask Feather Control: Feather the mask using one control
   - Text Versions: Add more tabs via properties
   - New Nodes: *FluxContinuumModelRouter*, *OutputGet*, *OutputGetString*, *OutputTextDisplay*, *DrawTextConfig* and *ConfigurableDrawText*
 
-- **1.3.0**: Initial release
+</details>
 
 ## Overview
 
@@ -38,21 +53,25 @@ ComfyUI Flux Continuum revolutionises workflow management through a thoughtful d
 
 - **Unified Control Interface**
   - Single set of controls affects all relevant modules
-  - No more juggling separate controls for each module
+  - Smart guidance adjustment based on operation type
+  - Consistent experience across all generation tasks
 
 - **Smart Workflow Management**
   - Only activates nodes and models required for current task
   - Toggle between different output types seamlessly
   - Efficiently handles resource allocation
+  - Optional TeaCache for speed optimization
 
 - **Universal Model Integration**
-  - LoRAs, ControlNets and IP Adapters work across all output modules
+  - LoRAs, ControlNets and Redux work across all output modules
   - Seamless Black Forest Labs model support
+  - Configurable model routing for custom workflows
 
-- **Modular Architecture**
-  - Clear separation between front-end and back-end
-  - Focus on creation in the front-end
-  - Easily extend with new modules
+- **Enhanced Usability**
+  - Interactive hint system for contextual help
+  - Quick image transfer with keyboard shortcut
+  - Intelligent preprocessing based on control values
+  - Crop & stitch for seamless inpainting/outpainting
 
 ---
 
@@ -62,14 +81,56 @@ ComfyUI Flux Continuum revolutionises workflow management through a thoughtful d
 ```shell
 git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 ```
-2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.6.4_release.json) and import the workflow into ComfyUI
-> Flux Continuum Light is [available here.](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%20Light%201.0.0_release.json) (only FLUX.1-dev model is required)
-2. Install missing custom nodes using the ComfyUI Manager
-3. Configure your models in the config panel (press `2` to access)
-4. Download any missing [FLUX models](https://comfyanonymous.github.io/ComfyUI_examples/flux/) and [ControlNet Union Pro v2](https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0)
-5. Return to the main interface (press `1`)
-6. Select `txt2img` from the output selector (top left corner)
-7. Run the workflow to generate your first image
+2. [Download](https://github.com/robertvoy/ComfyUI-Flux-Continuum/blob/main/workflow/Flux%2B%201.7.0_release.json) and import the workflow into ComfyUI
+3. Install missing custom nodes using the ComfyUI Manager
+4. Configure your models in the config panel (press `2` to access)
+5. Download any missing models (see Model Downloads section below)
+6. Return to the main interface (press `1`)
+7. Select `txt2img` from the output selector (top left corner)
+8. Run the workflow to generate your first image
+
+---
+
+## 🎯 Usage Guide
+
+### Output Selection
+The workflow is controlled by the **Output selector** in the top-left corner. Select your desired output and all relevant controls will automatically apply.
+
+### Key Controls
+
+**🎨 Main Generation**
+- **Prompt**: Your text description for generation
+- **Denoise**: Controls strength for img2img operations (0 = no change, 1 = completely new)
+- **Steps**: Number of sampling steps (higher = more detail, slower)
+- **Guidance**: How closely to follow the prompt (automatically set to 30 for inpainting/outpainting/canny/depth)
+- **TeaCache**: Toggle for speed boost (some quality trade-off)
+
+**🖼️ Input Images**
+- **Img Load**: Primary image for all img2img operations (inpainting, outpainting, detailer, upscaling)
+- **CN Input**: Source for ControlNet preprocessing
+- **Redux 1-3**: Up to 3 reference images for style transfer (use very low strength values)
+- **Tip**: Use `Ctrl+Shift+C` to quickly copy from Img Preview to Img Load
+
+**🎛️ ControlNet & Redux**
+- ControlNets activate when strength > 0
+- When CN strength > 0, preprocessor uses CN Input; otherwise uses Img Load
+- Preview preprocessor results by selecting corresponding output (e.g., "preprocessor canny")
+- Redux sliders control each Redux input individually (1 = Redux 1, etc.)
+
+**Recommended ControlNet Values:**
+- **Canny**: Strength=0.7, End=0.8
+- **Depth**: Strength=0.8, End=0.8
+- **Pose**: Strength=0.9, End=0.65
+
+**🔧 Image Processing**
+- Resize, crop, sharpen, color correct, or pad images
+- Preview results with "imgload prep" output
+- Bypass nodes after processing to avoid reprocessing (`Ctrl+B`)
+
+**⬆️ Upscaling**
+- **Resolution Multiply**: Multiplies image resolution after any preprocessing
+- **Upscale Model**: Choose your upscaling model (recommended: 4xNomos8kDAT)
+- 📺 [Watch Upscaling Tutorial](https://www.youtube.com/watch?v=TmF3JK_1AAs)
 
 ---
 
@@ -80,75 +141,129 @@ git clone https://github.com/robertvoy/ComfyUI-Flux-Continuum
 
 | Module | Description |
 |--------|-------------|
-| **txt2img** | Standard text-to-image generation. Generate images from prompts and tags |
+| **txt2img** | Standard text-to-image generation from prompts |
 | **txt2img noise injection** | Enhanced detail generation ([Learn more](https://youtu.be/tned5bYOC08?si=qfP2Sv2VOTzDK-uL&t=1335)) |
-| **img2img** | Load your image in the top-right corner and adjust the Denoise slider |
-| **inpainting** | Mask-based image editing with Black Forest Labs Fill model integration |
-| **outpainting** | Expand images beyond their boundaries with controllable padding. Adjust padding areas with the pad node. Preview by running the workflow with `imgload prep` output selected. Used the Black Forest Labs Fill model. |
-| **canny** | Use the new Black Forest Labs canny model to control your generation with an input image and a canny preprocessor |
-| **depth** | Same as above but with the depth model |
-| **detailer** | Focused refinement using mask selection. Use the `Img Mask` tab to create/load mask |
-| **ultimate upscaler** | Advanced upscaling. Use Upscale Model picker, Denoise slider, and Resolution Multiple slider    📺 [Watch Upscaling Tutorial](https://www.youtube.com/watch?v=TmF3JK_1AAs) |
-| **upscaler** | Simple model-based upscaling. Choose model and adjust the Resolution Multiple slider for size |
+| **img2img** | Transform existing images with text prompts |
+| **inpainting** | Edit specific areas with automatic crop & stitch using BFL Fill model |
+| **outpainting** | Expand images beyond boundaries with smart padding and BFL Fill model |
+| **canny** | Edge-guided generation using BFL Canny model |
+| **depth** | Depth-guided generation using BFL Depth model |
+| **detailer** | Focused refinement using mask selection |
+| **ultimate upscaler** | Advanced tiled upscaling with full control |
+| **upscaler** | Simple model-based upscaling |
 
 ### Utility Modules
 
 | Module | Description |
 |--------|-------------|
 | **imgload prep** | Preview processed images after crop/sharpen/resize/padding |
-| **preprocessor canny** | Preview the preprocessor outputs for canny. Ue the Canny tab to adjust your settings. Run the workflow to see the changes. |
-| **preprocessor depth** | Same as above but for depth. |
-| **preprocessor openpose** | Same as above but for OpenPose. |
+| **preprocessor canny** | Preview canny edge detection results |
+| **preprocessor depth** | Preview depth map generation |
+| **preprocessor openpose** | Preview pose detection results |
 
 ---
+
 ## 🔧 Custom Nodes
 
 > *These custom nodes were made specifically for this workflow and are required for it to work*
 
 ### Interface Enhancement Nodes
 
+- **Hint Node**: 
+  - Interactive help system throughout the workflow
+  - Hover for contextual information
+  - Right-click to edit hint content
+  - Supports markdown formatting
+
 - **Tabs**:
   - Space-saving node organization
   - Add tabs via properties panel
   - Compatible with most nodes
-  - Special handling for unsupported nodes (e.g., Rgthree) using dual-tab workaround
+  - Special handling for unsupported nodes
 
 - **Sliders**: 
   - Suite of pre-configured sliders
   - Optimized ranges and defaults for common operations
-  - Seamless integration with Flux workflow
+  - Includes: Denoise, Step, Guidance, Batch, GPU, ControlNet, Redux, and more
 
-- **OutputGet**
-  - Filters set nodes with the prefix `Output -`
-  - Comes with OutputTextDisplay: displays the name of the selected output in the OutputGet node
-  - And OutputGetString: outputs the selected output name in the OutputGet node as a string
+- **OutputGet System**:
+  - Filters set nodes with prefix `Output -`
+  - **OutputTextDisplay**: Visual display of selected output
+  - **OutputGetString**: String output for conditional routing
 
 - **Text Versions**:
-  - 5-tab text management system for prompt organization
-  - Add more tabs using the properties panel for this node
-  - Save different versions of your prompt/text
-  - Great for experimenting or using the detailer/inpainting
+  - Multi-tab text management (default 5 tabs)
+  - Add more tabs via properties panel
+  - Save different prompt versions
+  - Perfect for A/B testing
 
-- **ImageDisplay Extension**: 
-  - Displays Base64 images directly on canvas
-  - Configurable via properties panel
-  - Use sparingly to maintain optimal file size
+- **ImageDisplay**: 
+  - Base64 image display on canvas
+  - Configurable via properties
+  - Useful for reference images
 
-### Parameter Management Nodes
+### Workflow Control Nodes
 
-- **Sampler Parameter Packer**: Consolidates sampler settings with tabbed interface
-- **Sampler Parameter Unpacker**: Extracts packed parameters for workflow integration
-- **Batch Boolean**: Smart batch processing control. Adds the second input image to the batch only if condition is met
-- **Flux Continuum Model Router**: Intelligent model selection and routing. Designed specifically for this workflow
-- **Configurable Draw Text**: Takes an input from a Draw Text Config node with text style settings and renders text on top of an image
+- **Image Transfer Shortcut**: 
+  - `Ctrl+Alt+C` copies from Img Preview to Img Load
+  - Customizable in ComfyUI keybindings
 
-- **Value Pass**: An extension of `ComfyUI-KJNodes` pass-through functionality for Latent, Pipe, and SEGS data
+- **Configurable Model Router**: 
+  - Dynamic model selection with JSON mapping
+  - Flexible routing based on conditions
+  - Supports lazy loading for efficiency
+
+- **Sampler Parameter Packer/Unpacker**: 
+  - Consolidate sampler settings
+  - Tabbed interface for version control
+
+- **Image Batch Boolean**: 
+  - Conditional batch processing
+  - Smart second image loading
+
+- **Configurable Draw Text**: 
+  - Advanced text rendering on images
+  - Configurable fonts, colors, shadows, alignment
+
+- **Pass Nodes**: 
+  - Extended pass-through for Latent, Pipe, SEGS, and Int data types
+  - Maintains data flow integrity
+
+---
+
+## 📥 Model Downloads
+
+### Required Models
+
+**unet folder:**
+- [flux1-dev.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors)
+- [flux1-depth-dev.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-Depth-dev/resolve/main/flux1-depth-dev.safetensors)
+- [flux1-canny-dev.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-Canny-dev/resolve/main/flux1-canny-dev.safetensors)
+- [flux1-fill-dev.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev/resolve/main/flux1-fill-dev.safetensors)
+
+> **Note**: If you don't use Canny or Depth models, you can bypass their load nodes and skip downloading them.
+
+**vae folder:**
+- [ae.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors)
+
+**clip folder:**
+- [t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors)
+- [clip_l.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors)
+
+**style_models folder:**
+- [flux1-redux-dev.safetensors](https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev/resolve/main/flux1-redux-dev.safetensors)
+
+**clip_vision folder:**
+- [sigclip_vision_patch14_384.safetensors](https://huggingface.co/Comfy-Org/sigclip_vision_384/resolve/main/sigclip_vision_patch14_384.safetensors)
+
+**controlnet/FLUX folder:**
+- [FLUX.1-dev-ControlNet-Union-Pro-2.0.safetensors](https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0/resolve/main/diffusion_pytorch_model.safetensors) *(rename file)*
 
 ---
 
 ## 🔜 Coming Soon
 
-- **Multi-GPU Support**: Processing with multiple GPUs
+- **Multi-GPU Support**: Distributed processing across multiple GPUs
 
 ---
 

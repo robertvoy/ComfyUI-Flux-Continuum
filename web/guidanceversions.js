@@ -16,7 +16,7 @@ const TAB_CONFIG = {
 };
 
 app.registerExtension({
-    name: "TabbedGuidanceSlider",
+    name: "FluxContinuum.TabbedGuidanceSlider",
     
     // Modern API uses nodeCreated instead of beforeRegisterNodeDef
     nodeCreated(node) {
@@ -31,6 +31,7 @@ app.registerExtension({
         const originalGetBounding = node.getBounding;
         const originalOnSerialize = node.onSerialize;
         const originalOnConfigure = node.onConfigure;
+        const originalOnMouseDown = node.onMouseDown; // IMPORTANT: Store the original onMouseDown
 
         // Override methods
         node.onNodeCreated = function() {
@@ -110,6 +111,11 @@ app.registerExtension({
                         return true;
                     }
                 }
+            }
+            
+            // IMPORTANT: Call the original onMouseDown if we didn't handle the click
+            if (originalOnMouseDown) {
+                return originalOnMouseDown.apply(this, arguments);
             }
             
             return false;

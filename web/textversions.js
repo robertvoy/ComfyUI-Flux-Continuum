@@ -45,7 +45,7 @@ function debounce(func, wait) {
 }
 
 app.registerExtension({
-    name: "TextVersions",
+    name: "FluxContinuum.TextVersions",
     
     // Modern API uses nodeCreated instead of beforeRegisterNodeDef
     nodeCreated(node) {
@@ -58,6 +58,7 @@ app.registerExtension({
         const getBounding = node.getBounding;
         const onSerialize = node.onSerialize;
         const onConfigure = node.onConfigure;
+        const onMouseDown = node.onMouseDown; // IMPORTANT: Store the original onMouseDown
 
         // Add onNodeCreated to the node
         node.onNodeCreated = function() {
@@ -177,6 +178,11 @@ app.registerExtension({
                         return true;
                     }
                 }
+            }
+            
+            // IMPORTANT: Call the original onMouseDown if we didn't handle the click
+            if (onMouseDown) {
+                return onMouseDown.apply(this, arguments);
             }
             
             return false;

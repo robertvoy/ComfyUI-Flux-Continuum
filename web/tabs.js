@@ -270,7 +270,7 @@ class NodeWithTabs {
  *    "secondTabOffset", and "secondTabWidth"
  */
 app.registerExtension({
-    name: "NodeTabExtension",
+    name: "FluxContinuum.NodeTabExtension",
     
     // Using the modern nodeCreated hook that works with the latest ComfyUI version
     nodeCreated(node) {
