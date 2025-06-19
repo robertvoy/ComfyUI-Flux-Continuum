@@ -7,7 +7,7 @@
 📺 [Watch the Tutorial](https://www.youtube.com/watch?v=cjWuPcRZ1j0)
 
 ## Updates
-- **1.7.0:** Enhanced workflow and usability update
+- **1.7.0:** Enhanced workflow and usability update 📺 [Watch Video Update](https://www.youtube.com/watch?v=e_7cYbBwjFc)
   - **Image Transfer Shortcut**: Use `Ctrl+Shift+C` to copy images from Img Preview to Img Load (customizable in Settings > Keybinding > Image Transfer)
   - **Configurable Model Router**: Dynamic model selection with customizable JSON mapping for flexible workflows
   - **Hint System**: Interactive hint nodes provide contextual help throughout the workflow
