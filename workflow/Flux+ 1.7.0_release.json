@@ -162,7 +162,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 277,
+      "order": 276,
       "mode": 0,
       "inputs": [
         {
@@ -200,7 +200,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 276,
+      "order": 275,
       "mode": 0,
       "inputs": [
         {
@@ -829,7 +829,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 279,
+      "order": 278,
       "mode": 0,
       "inputs": [
         {
@@ -870,7 +870,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 281,
+      "order": 280,
       "mode": 0,
       "inputs": [
         {
@@ -911,7 +911,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 280,
+      "order": 279,
       "mode": 0,
       "inputs": [
         {
@@ -952,7 +952,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 282,
+      "order": 281,
       "mode": 0,
       "inputs": [
         {
@@ -1034,7 +1034,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 278,
+      "order": 277,
       "mode": 0,
       "inputs": [
         {
@@ -1074,7 +1074,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 273,
+      "order": 272,
       "mode": 0,
       "inputs": [
         {
@@ -1113,7 +1113,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 272,
+      "order": 271,
       "mode": 0,
       "inputs": [
         {
@@ -1152,7 +1152,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 271,
+      "order": 270,
       "mode": 0,
       "inputs": [
         {
@@ -1271,7 +1271,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 283,
+      "order": 282,
       "mode": 0,
       "inputs": [
         {
@@ -1311,7 +1311,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 270,
+      "order": 269,
       "mode": 0,
       "inputs": [
         {
@@ -1429,7 +1429,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 285,
+      "order": 284,
       "mode": 0,
       "inputs": [
         {
@@ -1469,7 +1469,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 274,
+      "order": 273,
       "mode": 0,
       "inputs": [
         {
@@ -1507,7 +1507,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 284,
+      "order": 283,
       "mode": 0,
       "inputs": [
         {
@@ -1588,7 +1588,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 269,
+      "order": 285,
       "mode": 0,
       "inputs": [
         {
@@ -2792,7 +2792,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 275,
+      "order": 274,
       "mode": 0,
       "inputs": [
         {
@@ -13847,12 +13847,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huulk_00091_.png&type=temp&subfolder=&rand=0.5584862985559944"
+            "url": "/api/view?filename=rgthree.compare._temp_quelf_00009_.png&type=temp&subfolder=&rand=0.9973055114185437"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_huulk_00092_.png&type=temp&subfolder=&rand=0.5007668773439069"
+            "url": "/api/view?filename=rgthree.compare._temp_quelf_00010_.png&type=temp&subfolder=&rand=0.7971125669079543"
           }
         ]
       ],
@@ -15272,100 +15272,6 @@
         "showOutputText": false,
         "horizontal": false
       }
-    },
-    {
-      "id": 4121,
-      "type": "InpaintCropImproved",
-      "pos": [
-        3990,
-        4530
-      ],
-      "size": [
-        348.60418701171875,
-        626
-      ],
-      "flags": {},
-      "order": 235,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 6319
-        },
-        {
-          "name": "mask",
-          "shape": 7,
-          "type": "MASK",
-          "link": 6317
-        },
-        {
-          "name": "optional_context_mask",
-          "shape": 7,
-          "type": "MASK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "stitcher",
-          "type": "STITCHER",
-          "links": [
-            6327
-          ]
-        },
-        {
-          "name": "cropped_image",
-          "type": "IMAGE",
-          "links": [
-            6314
-          ]
-        },
-        {
-          "name": "cropped_mask",
-          "type": "MASK",
-          "links": [
-            6315
-          ]
-        }
-      ],
-      "properties": {
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "cnr_id": "comfyui-inpaint-cropandstitch",
-        "ver": "2.1.7",
-        "Node name for S&R": "InpaintCropImproved"
-      },
-      "widgets_values": [
-        "bilinear",
-        "bicubic",
-        false,
-        "ensure minimum resolution",
-        1024,
-        1024,
-        16384,
-        16384,
-        true,
-        0,
-        false,
-        0,
-        0.1,
-        false,
-        1.0000000000000002,
-        1.0000000000000002,
-        1.0000000000000002,
-        1.4000000000000004,
-        1.4000000000000004,
-        false,
-        1024,
-        1024,
-        "32"
-      ]
     },
     {
       "id": 4123,
@@ -19089,54 +18995,6 @@
       ]
     },
     {
-      "id": 922,
-      "type": "Seed (rgthree)",
-      "pos": [
-        480,
-        1160
-      ],
-      "size": [
-        310,
-        130
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 177,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "dir": 4,
-          "name": "SEED",
-          "shape": 3,
-          "type": "INT",
-          "slot_index": 0,
-          "links": [
-            6239
-          ]
-        }
-      ],
-      "title": "Seed",
-      "properties": {
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "cnr_id": "rgthree-comfy",
-        "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced"
-      },
-      "widgets_values": [
-        577218135488167,
-        null,
-        null,
-        null
-      ]
-    },
-    {
       "id": 4117,
       "type": "InpaintCropImproved",
       "pos": [
@@ -19438,7 +19296,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 178,
+      "order": 177,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19488,7 +19346,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 179,
+      "order": 178,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19538,7 +19396,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 180,
+      "order": 179,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19587,7 +19445,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 181,
+      "order": 180,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19701,7 +19559,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 182,
+      "order": 181,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19747,7 +19605,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 183,
+      "order": 182,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -19891,7 +19749,7 @@
         "1": 20
       },
       "flags": {},
-      "order": 184,
+      "order": 183,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -19974,7 +19832,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 185,
+      "order": 184,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20031,7 +19889,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 186,
+      "order": 185,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20133,7 +19991,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 187,
+      "order": 186,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20188,7 +20046,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 188,
+      "order": 187,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20241,7 +20099,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 189,
+      "order": 188,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20294,7 +20152,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 190,
+      "order": 189,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20347,7 +20205,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 191,
+      "order": 190,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20403,7 +20261,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 192,
+      "order": 191,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20447,7 +20305,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 193,
+      "order": 192,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -20475,6 +20333,148 @@
       },
       "widgets_values": [
         1.5
+      ]
+    },
+    {
+      "id": 4121,
+      "type": "InpaintCropImproved",
+      "pos": [
+        3990,
+        4530
+      ],
+      "size": [
+        348.60418701171875,
+        626
+      ],
+      "flags": {},
+      "order": 235,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 6319
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 6317
+        },
+        {
+          "name": "optional_context_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "stitcher",
+          "type": "STITCHER",
+          "links": [
+            6327
+          ]
+        },
+        {
+          "name": "cropped_image",
+          "type": "IMAGE",
+          "links": [
+            6314
+          ]
+        },
+        {
+          "name": "cropped_mask",
+          "type": "MASK",
+          "links": [
+            6315
+          ]
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "cnr_id": "comfyui-inpaint-cropandstitch",
+        "ver": "2.1.7",
+        "Node name for S&R": "InpaintCropImproved"
+      },
+      "widgets_values": [
+        "bilinear",
+        "bicubic",
+        false,
+        "ensure minimum resolution",
+        1024,
+        1024,
+        16384,
+        16384,
+        true,
+        0,
+        false,
+        0,
+        0.1,
+        false,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.4000000000000004,
+        1.4000000000000004,
+        true,
+        1024,
+        1024,
+        "32"
+      ]
+    },
+    {
+      "id": 922,
+      "type": "Seed (rgthree)",
+      "pos": [
+        480,
+        1160
+      ],
+      "size": [
+        310,
+        130
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 193,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            6239
+          ]
+        }
+      ],
+      "title": "Seed",
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "cnr_id": "rgthree-comfy",
+        "ver": "32142fe476878a354dda6e2d4b5ea98960de3ced"
+      },
+      "widgets_values": [
+        -1,
+        null,
+        null,
+        null
       ]
     },
     {
@@ -24706,10 +24706,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6209213230591553,
+      "scale": 0.9090909090909098,
       "offset": [
-        -106.38232096063027,
-        -46.19604165745031
+        -191.1400082616483,
+        -32.72070904842098
       ]
     },
     "frontendVersion": "1.21.7",
