@@ -205,7 +205,7 @@ The workflow is controlled by the **Output selector** in the top-left corner. Se
 ### Workflow Control Nodes
 
 - **Image Transfer Shortcut**: 
-  - `Ctrl+Alt+C` copies from Img Preview to Img Load
+  - `Ctrl+Shift+C` copies from Img Preview to Img Load
   - Customizable in ComfyUI keybindings
 
 - **Configurable Model Router**: 
