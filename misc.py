@@ -12,6 +12,12 @@ import numpy as np
 import json
 from typing import Any, Mapping, Tuple
 
+class AnyType(str):
+    def __ne__(self, __value: object) -> bool:
+        return False
+
+any_typ = AnyType("*")
+
 class DenoiseSlider:
     @classmethod
     def INPUT_TYPES(s):
@@ -306,7 +312,7 @@ class SamplerParameterPacker:
 
 class SamplerParameterUnpacker:
     CATEGORY = 'Flux-Continuum/Utilities'
-    RETURN_TYPES = (comfy.samplers.KSampler.SAMPLERS, "STRING", comfy.samplers.KSampler.SCHEDULERS, "STRING",)
+    RETURN_TYPES = (comfy.samplers.KSampler.SAMPLERS, "STRING", any_typ, "STRING",)
     RETURN_NAMES = ("sampler", "sampler_name", "scheduler", "scheduler_name",)
     FUNCTION = "unpack_parameters"
     DESCRIPTION = "Unpacks previously packed sampler parameters back into individual components"
@@ -361,11 +367,6 @@ def is_execution_model_version_supported():
     except:
         return False
 
-class AnyType(str):
-    def __ne__(self, __value: object) -> bool:
-        return False
-
-any_typ = AnyType("*")
 
 class ImpactControlBridgeFix:
     @classmethod
@@ -542,6 +543,8 @@ class OutputGetString:
     def process(self, title, unique_id, prompt):
         title = title[len("Output - "):]
         return (title,)
+
+ 
 
 # Type definition for Vec3
 Vec3 = Tuple[float, float, float]
